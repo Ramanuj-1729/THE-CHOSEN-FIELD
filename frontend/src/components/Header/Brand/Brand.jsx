@@ -10,7 +10,7 @@ const Brand = () => {
                     <i className="fa-solid fa-phone text-3xl"></i>
                     <span className="text-lg ml-3">
                         <div className="font-normal">Call Us</div>
-                        <djv className="font-medium">+91 7051144137</djv>
+                        <div className="font-medium">+91 7051144137</div>
                     </span>
                 </span>
                 <span className="text-primary space-x-5">
