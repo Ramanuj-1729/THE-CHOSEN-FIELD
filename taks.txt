@@ -1,28 +1,8 @@
  Functions
 
- 1. Show Courses ✅
- 2. Inquiry Forms ✅
- 3. Webinars Registration ✅
- 4. Tutor  ✅
- 5. Introduction Videos ✅
-
-
- "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
-    "@heroicons/react": "^2.0.18",
-    "@mui/material": "^5.14.0",
-    "@reduxjs/toolkit": "^1.9.5",
-    "@stripe/stripe-js": "^2.1.9",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@ungap/structured-clone": "^1.2.0",
-    "axios": "^1.4.0",
-    "hex-color-to-color-name": "^1.0.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-redux": "^8.1.0",
-    "react-router-dom": "^6.13.0",
-    "react-scripts": "5.0.1",
-    "swiper": "^9.4.1",
-    "web-vitals": "^2.1.4"
+ 1. Show Courses
+ 2. Inquiry Forms
+ 3. Webinars Registration
+ 4. Tutor
+ 5. Introduction Videos
+ 6. Show You Tube Videos ✅
