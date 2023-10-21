@@ -17,8 +17,9 @@ module.exports = {
       white: "#ffffff",
       primary: "#1eb2a6",
       font_one: "#07294d",
-      font_two: "#1eb2a6",
-      transparent_blur: "rgba(255, 255, 255, 0.2)"
+      font_two: "#323232",
+      fadeWhite: "#F8F8F8",
+      transparent_blur: "rgba(255, 255, 255, 0.2)",
     },
     screens: {
       'smallPhone': '320px', // Phone - portrait

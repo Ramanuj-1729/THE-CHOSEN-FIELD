@@ -22,14 +22,14 @@ const Header = ({ children }) => {
     return (
         <div style={headerBackground} className="px-40">
             {children}
-            <div style={{animation: '1s ease-out 0s 1 slideUpEffect'}} className="absolute translate-y-2/3">
+            <div style={{animation: '1s ease-out 0s 1 slideUpEffect'}} className="absolute translate-y-1/2">
                 <span className="text-sm font-medium text-primary">WELCOME TO <b>THE CHOSEN FIELD</b></span>
                 <div className="text-6xl font-semibold text-white my-5">Build Your <br /> Future, Choose <br /> your Course</div>
                 <p className="text-base text-white opacity-[0.8] mb-6">Buy your course now & start your preparation</p>
                 <span>
                     <button className="text-white bg-primary text-lg font-medium py-4 px-10 rounded mr-5 transition ease-in-out delay-150 hover:bg-[#19a095]">View Courses</button>
                     <button onClick={handleShowVideo} className="text-white text-lg font-medium py-4 px-10 rounded border-2 border-primary hover:border-[#19a095] "><i className="fa-regular fa-circle-play mr-3"></i>Watch Video</button>
-                </span>
+                </span> 
             </div>
             
             <div style={{backgroundColor: 'rgba(0, 0, 0, 0.85)'}} className={`${showVideo ? 'block' : 'hidden'} absolute top-0 left-0 right-0 bottom-0 z-20`}>
