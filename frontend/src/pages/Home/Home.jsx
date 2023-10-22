@@ -1,5 +1,7 @@
+import FeaturedCourses from "../../components/FeaturedCourses/FeaturedCourses";
 import Brand from "../../components/Header/Brand/Brand";
 import Header from "../../components/Header/Header";
+import OurTeam from "../../components/OurTeam/OurTeam";
 import WhyTheChosenField from "../../components/WhyTheChosenField/WhyTheChosenField";
 
 const Home = () => {
@@ -11,9 +13,9 @@ const Home = () => {
                 </Header>
             </section>
 
-            <section className="bg-fadeWhite">
-                <WhyTheChosenField />
-            </section>
+            <WhyTheChosenField />
+            <FeaturedCourses />
+            <OurTeam />
         </main>
     );
 }

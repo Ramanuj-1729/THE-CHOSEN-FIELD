@@ -1,18 +1,15 @@
+import Section from "../Section/Section";
 import WhyCard from "./WhyCard/WhyCard";
 
 const WhyTheChosenField = () => {
     return (
-        <div className="mx-40 flex items-center flex-col py-24">
-            <h4 className="text-primary font-semibold text-base mb-2">WHY THE CHOSEN FIELD ?</h4>
-            <h2 className="text-3xl text-center text-font_two font-semibold mb-10">Making learning easier and <br /> more convenient for you.</h2>
-
+        <Section heading="WHY THE CHOSEN FIELD ?" subHeading={`Making learning easier and more convenient for you`} bgColor="#F8F8F8">
             <div className="grid grid-cols-3 gap-6">
-                <WhyCard icon="fa-solid fa-user" color="#1eb2a6" heading="Data Structure" paragraph="Data structures are the problem-solving pillars of coding. Learn all the foundational knowledge about all of the popular data structure that you need, to be well-versed in interviews." />
-                <WhyCard icon="fa-solid fa-user" color="#1eb2a6" heading="Data Structure" paragraph="Data structures are the problem-solving pillars of coding. Learn all the foundational knowledge about all of the popular data structure that you need, to be well-versed in interviews." />
-                <WhyCard icon="fa-solid fa-user" color="#1eb2a6" heading="Data Structure" paragraph="Data structures are the problem-solving pillars of coding. Learn all the foundational knowledge about all of the popular data structure that you need, to be well-versed in interviews." />
-                <WhyCard icon="fa-solid fa-user" color="#1eb2a6" heading="Data Structure" paragraph="Data structures are the problem-solving pillars of coding. Learn all the foundational knowledge about all of the popular data structure that you need, to be well-versed in interviews." />
+                <WhyCard icon="fa-regular fa-newspaper" color="#36688D" heading="Learn Something new" paragraph="Learn new concepts daily, increase your productivity & reach your full potential." />
+                <WhyCard icon="fa-solid fa-book" color="#F3CD05" heading="Curated Content" paragraph="Learn in-depth conceptual overviews, reliable and high-quality material." />
+                <WhyCard icon="fa-solid fa-clipboard-question" color="#6464A5" heading="Hand Picked Question" paragraph="Get access to hand-picked exam questions across categories & difficulty levels." />
             </div>
-        </div>
+        </Section>
     );
 }
 
