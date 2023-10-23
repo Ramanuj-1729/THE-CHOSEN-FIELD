@@ -3,7 +3,7 @@ import Section from '../Section/Section';
 const Webinar = () => {
     return (
         <Section heading="Webinar" subHeading="Join Our Exciting Webinar on Web Development!" bgColor="#F8F8F8">
-            <div style={{ boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 12px' }} className='flex p-5 rounded-xl'>
+            <div style={{ boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 12px' }} className='flex p-5 rounded-xl bg-white'>
                 <img style={{ boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px' }} className='w-[420px] rounded-md mr-10' src="images/Webinar-img.png" alt="" />
                 <div className='flex flex-col justify-between pl-10 border-l-2 border-dashed border-gray'>
                     <div>
