@@ -22,7 +22,7 @@ const Header = ({ children }) => {
     return (
         <div style={headerBackground} className="px-40">
             {children}
-            <div style={{animation: '1s ease-out 0s 1 slideUpEffect'}} className="absolute translate-y-1/2">
+            <div className="absolute translate-y-1/2">
                 <span className="text-sm font-medium text-primary">WELCOME TO <b>THE CHOSEN FIELD</b></span>
                 <div className="text-6xl font-semibold text-white my-5">Build Your <br /> Future, Choose <br /> your Course</div>
                 <p className="text-base text-white opacity-[0.8] mb-6">Buy your course now & start your preparation</p>

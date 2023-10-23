@@ -19,6 +19,7 @@ module.exports = {
       font_one: "#07294d",
       font_two: "#323232",
       fadeWhite: "#F8F8F8",
+      gray: "#a6a6a6",
       transparent_blur: "rgba(255, 255, 255, 0.2)",
     },
     screens: {
