@@ -12,8 +12,8 @@ const Navbar = () => {
         <div style={navBgStyle} className='flex mx-40 py-5 pl-5 items-center absolute top-[6.3rem] left-0 right-0 z-10'>
             <ul className='flex text-white space-x-10 text-base'>
                 <NavLink to="/" className="text-primary transition ease-in-out delay-150  hover:text-primary"><li>Home</li></NavLink>
-                <NavLink to="/about" className="transition ease-in-out delay-150 hover:text-primary"><li>About Us</li></NavLink>
                 <NavLink to="/courses" className="transition ease-in-out delay-150 hover:text-primary"><li>Courses</li></NavLink>
+                <NavLink to="/about" className="transition ease-in-out delay-150 hover:text-primary"><li>About Us</li></NavLink>
                 <NavLink to="/contact" className="transition ease-in-out delay-150 hover:text-primary"><li>Contact Us</li></NavLink>
             </ul>
         </div>
