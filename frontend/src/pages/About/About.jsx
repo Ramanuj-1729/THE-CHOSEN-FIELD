@@ -1,5 +1,6 @@
 import Header from '../../components/Header/Header';
 import Brand from '../../components/Header/Brand/Brand';
+import { NavLink } from 'react-router-dom';
 
 const About = () => {
     return (
@@ -11,20 +12,20 @@ const About = () => {
             </section>
             <div className='px-40 my-10 space-y-10'>
                 <div className='flex items-center space-x-10'>
-                    <img data-aos="fade-right" className='w-[580px] rounded-3xl' src="images/instructor_photo.png" alt="instructor-about" />
+                    <img data-aos="fade-right" className='w-[580px] rounded-3xl' src="images/admin2.jpg" alt="instructor-about" />
                     <div data-aos="fade-left">
                         <h2 className='text-4xl font-semibold text-font_one mb-5'>About Us</h2>
-                        <h4 className='text-2xl text-font_two font-medium mb-2'>Hello! Welcome to Code Help! Really happy to see you here.</h4>
-                        <p className='text-lg text-font_two font-normal text-justify'>Thinking of taking a step towards a mentorship programme? It definitely seems a bit daunting at first. It is never easy to ask for someone's counsel or guidance be it for studies or just in general. So, at CodeHelp we are here to provide all the necessary counsel you might need for placement preparations, interview experiences, programming, et cetera! For any additional questions, feel free to email us at lovebabbar@codehelp.in</p>
+                        <h4 className='text-2xl text-font_two font-medium mb-2'>Hello! Welcome to TheChosenField! Really happy to see you here.</h4>
+                        <p className='text-lg text-font_two font-normal text-justify'>With the vision of imparting quality education through sustainable manner, an idea turned into an Academy, me and out core members are working day and night in developing courses that just are exceptional in this modern day education. We are committed in delivering Courses to Live 1:1 Counselling sessions in Personal and Academic Issues, As a team we are here to improve you and your career as we do. For any additional questions, feel free to contact us at <NavLink to="/contact">www.thechosenfield.com/contact</NavLink></p>
                     </div>
                 </div>
                 <div className='flex items-center space-x-10'>
                     <div data-aos="fade-right">
                         <h2 className='text-4xl font-semibold text-font_one mb-5'>Our Story</h2>
-                        <h4 className='text-2xl text-font_two font-medium mb-2'>At Code Help, we aim to provide new students with proper mentorship and education for their learning and growth.</h4>
-                        <p className='text-lg text-font_two font-normal text-justify'>Code Help was founded in 2020 by Love Babbar (Ex-Amazon, Ex-Microsoft) to deliver “to the point, short and practical” educational content for learning programming, coding, and preparing for job placements, and interviews. He has been mentoring students through his Youtube channel which has now gained more than 17 million views and is now looking forward to providing his guidance in different courses through Code Help.</p>
+                        <h4 className='text-2xl text-font_two font-medium mb-2'>At TheChosenField, we aim to provide new students with proper mentorship and education for their learning and growth.</h4>
+                        <p className='text-lg text-font_two font-normal text-justify'>I am Sajad Ahmed, An Educator, Counsellor, Motivator and Academician. During the last 7 years I have worked with many prominent organisations and delivered quality education and guidance to the young minds both in online and offline modes, I have a diverse expertise and have taught different science and social science with quality adherence. Now its my mission to transform your journey from an ordinary aspirant to the best version of yourself.</p>
                     </div>
-                    <img data-aos="fade-left" className='w-[580px] rounded-3xl' src="images/instructor_photo.png" alt="instructor-story" />
+                    <img data-aos="fade-left" className='w-[580px] rounded-3xl' src="images/admin1.jpg" alt="instructor-story" />
                 </div>
             </div>
         </>

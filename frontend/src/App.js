@@ -5,7 +5,6 @@ import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Courses from "./pages/Courses/Courses";
 import Footer from "./components/shared/Footer/Footer";
-import Webinar from "./components/Webinar/Webinar";
 import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 import TermsConditions from "./pages/TermsConditions/TermsConditions";
 import { useEffect } from "react";
@@ -28,7 +27,6 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/courses" element={<Courses />} />
-        <Route path="/webinar" element={<Webinar />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-conditions" element={<TermsConditions />} />
       </Routes>

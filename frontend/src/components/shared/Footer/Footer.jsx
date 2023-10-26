@@ -8,16 +8,17 @@ const Footer = () => {
                 <div className="flex flex-col">
                     <NavLink to="/">
                         <img className="w-16" src="images/THE_CHOSEN_FIELD_LOGO.png" alt="logo" />
-                        <span className="text-lg text-white font-semibold">THE CHOSEN FIELD</span>
+                        <span className="text-lg text-white font-semibold">TheChosenField</span>
                     </NavLink>
-                    <p className="text-base text-font_one font-medium mt-2">Welcome to The Chosen Field. <br /> Build Your Future, Choose your Course</p>
+                    <p className="text-base text-font_one font-medium mt-2">Welcome to TheChosenField. <br /> Build Your Future, Choose your Course</p>
                     <span className="text-primary space-x-5 mt-5">
                         <NavLink to="https://www.youtube.com/@TheChosenField" target="_blank"><i className="fa-brands fa-youtube p-3 rounded-full bg-transparent_blur transition ease-in delay-150 hover:text-white hover:bg-primary"></i></NavLink>
-                        <NavLink to="https://www.instagram.com/" target="_blank"><i className="fa-brands fa-square-instagram p-3 rounded-full bg-transparent_blur transition ease-in delay-150 hover:text-white hover:bg-primary"></i></NavLink>
-                        <NavLink to="https://www.twitter.com/" target="_blank"><i className="fa-brands fa-twitter p-3 rounded-full bg-transparent_blur transition ease-in delay-150 hover:text-white hover:bg-primary"></i></NavLink>
+                        <NavLink to="http://www.instagram.com/_silentplay" target="_blank"><i className="fa-brands fa-square-instagram p-3 rounded-full bg-transparent_blur transition ease-in delay-150 hover:text-white hover:bg-primary"></i></NavLink>
+                        <NavLink to="https://twitter.com/qureshisajjad21" target="_blank"><i className="fa-brands fa-twitter p-3 rounded-full bg-transparent_blur transition ease-in delay-150 hover:text-white hover:bg-primary"></i></NavLink>
+                        <NavLink to="http://www.quora.com/profile/Sajjad-Qureshi-13?ch=2&oid=246599219&srid=hJROR&target_type=user" target="_blank"><i className="fa-brands fa-quora p-3 rounded-full bg-transparent_blur transition ease-in delay-150 hover:text-white hover:bg-primary"></i></NavLink>
                     </span>
                     <div className="absolute bottom-3 right-40 flex items-center flex-col">
-                        <p data-aos="fade" className="text-font_one font-semibold">Get the THECHOSENFIELD App</p>
+                        <p data-aos="fade" className="text-font_one font-semibold">Get the TheChosenField App</p>
                         <NavLink data-aos="flip-left" to="https://play.google.com/store/apps/details?id=co.diaz.wjgqz" target="_blank"><img className="w-40" src="images/google-play-badge.png" alt="google-play-badge" /></NavLink>
                     </div>
                 </div>
@@ -39,23 +40,23 @@ const Footer = () => {
                         <li className="text-font_one font-semibold mb-3">Have a Questions?</li>
                         <li className="flex items-center space-x-4 mb-3">
                             <i className="fa-solid fa-map-location-dot text-font_one"></i>
-                            <p className="w-64 text-font_two font-medium">142 Fake St. Mountain View, Delhi, Delhi, India</p>
+                            <p className="w-64 text-font_two font-medium"> Mahamaya Mandir lane, Raika, Narwal, Jammu 180006</p>
                         </li>
 
                         <li className="flex items-center space-x-4 mb-3">
                             <i className="fa-solid fa-phone text-font_one"></i>
-                            <p className="text-font_two font-medium">+91 7051144137</p>
+                            <p className="text-font_two font-medium">+91-7051144137</p>
                         </li>
 
                         <li className="flex items-center space-x-4">
                             <i className="fa-solid fa-at text-font_one"></i>
-                            <p className="text-font_two font-medium">info@thechosenfield.com</p>
+                            <p className="text-font_two font-medium">sajjadqureshi326@gmail.com</p>
                         </li>
                     </ul>
                 </div>
             </div>
             <div className="flex items-center justify-center py-5">
-                <p className="text-font_two">© 2023 <NavLink to="/" className="ml-1 font-semibold hover:text-primary">The Chosen Field</NavLink>. All rights reserved.</p>
+                <p className="text-font_two">© 2023 <NavLink to="/" className="ml-1 font-semibold hover:text-primary">TheChosenField</NavLink>. All rights reserved.</p>
             </div>
         </div>
     );

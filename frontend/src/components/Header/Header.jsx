@@ -30,7 +30,7 @@ const Header = ({ bgImage, children }) => {
             {
                 path === '/' ?
                     <div data-aos="fade-up" className="header-containt absolute mt-52">
-                        <span className="text-sm font-medium text-primary">WELCOME TO <b>THE CHOSEN FIELD</b></span>
+                        <span className="text-sm font-medium text-primary">WELCOME TO <strong>TheChosenField</strong></span>
                         <div className="text-6xl font-semibold text-white my-5">Build Your <br /> Future, Choose <br /> your Course</div>
                         <p className="text-base text-white opacity-[0.8] mb-6">Buy your course now & start your preparation</p>
                         <span>

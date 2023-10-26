@@ -13,37 +13,37 @@ const TermsConditions = () => {
             <div className="px-40 py-20">
                 <h2 className="text-4xl font-semibold text-primary mb-5">Terms and Conditions</h2>
 
-                <p className="text-xl font-medium text-font_one mb-5">Welcome to THE CHOSEN FIELD!</p>
+                <p className="text-xl font-medium text-font_one mb-5">Welcome to TheChosenField!</p>
 
-                <p className="text-base text-justify text-font_two mb-3"><strong className="text-xl text-font_one">T</strong>hese terms and conditions outline the rules and regulations for the use of THE CHOSEN FIELD's Website, located at <NavLink to="/" className=" text-primary">https://www.thechosenfield.com</NavLink>.</p>
+                <p className="text-base text-justify text-font_two mb-3"><strong className="text-xl text-font_one">T</strong>hese terms and conditions outline the rules and regulations for the use of TheChosenField's Website, located at <NavLink to="/" className=" text-primary">https://www.thechosenfield.com</NavLink>.</p>
 
-                <p className="text-base text-justify text-font_two mb-3">By accessing this website we assume you accept these terms and conditions. Do not continue to use THE CHOSEN FIELD if you do not agree to take all of the terms and conditions stated on this page.</p>
+                <p className="text-base text-justify text-font_two mb-3">By accessing this website we assume you accept these terms and conditions. Do not continue to use TheChosenField if you do not agree to take all of the terms and conditions stated on this page.</p>
 
                 <p className="text-base text-justify text-font_two mb-3">The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: "Client", "You" and "Your" refers to you, the person log on this website and compliant to the Company's terms and conditions. "The Company", "Ourselves", "We", "Our" and "Us", refers to our Company. "Party", "Parties", or "Us", refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client's needs in respect of provision of the Company's stated services, in accordance with and subject to, prevailing law of in. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same.</p>
 
                 <h3 className=" text-2xl text-font_two font-medium mb-2">Cookies</h3>
 
-                <p className="text-base text-justify text-font_two mb-3">We employ the use of cookies. By accessing THE CHOSEN FIELD, you agreed to use cookies in agreement with the THE CHOSEN FIELD's Privacy Policy. </p>
+                <p className="text-base text-justify text-font_two mb-3">We employ the use of cookies. By accessing TheChosenField, you agreed to use cookies in agreement with the TheChosenField's Privacy Policy. </p>
 
                 <p className="text-base text-justify text-font_two mb-3">Most interactive websites use cookies to let us retrieve the user's details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies.</p>
 
                 <h3 className=" text-2xl text-font_two font-medium mb-2">License</h3>
 
-                <p className="text-base text-justify text-font_two mb-3">Unless otherwise stated, THE CHOSEN FIELD and/or its licensors own the intellectual property rights for all material on THE CHOSEN FIELD. All intellectual property rights are reserved. You may access this from THE CHOSEN FIELD for your own personal use subjected to restrictions set in these terms and conditions.</p>
+                <p className="text-base text-justify text-font_two mb-3">Unless otherwise stated, TheChosenField and/or its licensors own the intellectual property rights for all material on TheChosenField. All intellectual property rights are reserved. You may access this from TheChosenField for your own personal use subjected to restrictions set in these terms and conditions.</p>
 
                 <p className="text-base text-justify text-font_two mb-3">You must not:</p>
                 <ul className="text-base text-justify text-font_two mb-3 list-disc">
-                    <li className="ml-10">Republish material from THE CHOSEN FIELD</li>
-                    <li className="ml-10">Sell, rent or sub-license material from THE CHOSEN FIELD</li>
-                    <li className="ml-10">Reproduce, duplicate or copy material from THE CHOSEN FIELD</li>
-                    <li className="ml-10">Redistribute content from THE CHOSEN FIELD</li>
+                    <li className="ml-10">Republish material from TheChosenField</li>
+                    <li className="ml-10">Sell, rent or sub-license material from TheChosenField</li>
+                    <li className="ml-10">Reproduce, duplicate or copy material from TheChosenField</li>
+                    <li className="ml-10">Redistribute content from TheChosenField</li>
                 </ul>
 
                 <p className="text-base text-justify text-font_two mb-3">This Agreement shall begin on the date hereof. Our Terms and Conditions were created with the help of the <a href="https://www.termsandconditionsgenerator.com/">Free Terms and Conditions Generator</a>.</p>
 
-                <p className="text-base text-justify text-font_two mb-3">Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website. THE CHOSEN FIELD does not filter, edit, publish or review Comments prior to their presence on the website. Comments do not reflect the views and opinions of THE CHOSEN FIELD,its agents and/or affiliates. Comments reflect the views and opinions of the person who post their views and opinions. To the extent permitted by applicable laws, THE CHOSEN FIELD shall not be liable for the Comments or for any liability, damages or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this website.</p>
+                <p className="text-base text-justify text-font_two mb-3">Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website. TheChosenField does not filter, edit, publish or review Comments prior to their presence on the website. Comments do not reflect the views and opinions of TheChosenField,its agents and/or affiliates. Comments reflect the views and opinions of the person who post their views and opinions. To the extent permitted by applicable laws, TheChosenField shall not be liable for the Comments or for any liability, damages or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this website.</p>
 
-                <p className="text-base text-justify text-font_two mb-3">THE CHOSEN FIELD reserves the right to monitor all Comments and to remove any Comments which can be considered inappropriate, offensive or causes breach of these Terms and Conditions.</p>
+                <p className="text-base text-justify text-font_two mb-3">TheChosenField reserves the right to monitor all Comments and to remove any Comments which can be considered inappropriate, offensive or causes breach of these Terms and Conditions.</p>
 
                 <p className="text-base text-justify text-font_two mb-3">You warrant and represent that:</p>
 
@@ -54,7 +54,7 @@ const TermsConditions = () => {
                     <li className="ml-10">The Comments will not be used to solicit or promote business or custom or present commercial activities or unlawful activity.</li>
                 </ul>
 
-                <p className="text-base text-justify text-font_two mb-3">You hereby grant THE CHOSEN FIELD a non-exclusive license to use, reproduce, edit and authorize others to use, reproduce and edit any of your Comments in any and all forms, formats or media.</p>
+                <p className="text-base text-justify text-font_two mb-3">You hereby grant TheChosenField a non-exclusive license to use, reproduce, edit and authorize others to use, reproduce and edit any of your Comments in any and all forms, formats or media.</p>
 
                 <h3 className=" text-2xl text-font_two font-medium mb-2">Hyperlinking to our Content</h3>
 
@@ -82,11 +82,11 @@ const TermsConditions = () => {
                     <li className="ml-10">educational institutions and trade associations.</li>
                 </ul>
 
-                <p className="text-base text-justify text-font_two mb-3">We will approve link requests from these organizations if we decide that: (a) the link would not make us look unfavorably to ourselves or to our accredited businesses; (b) the organization does not have any negative records with us; (c) the benefit to us from the visibility of the hyperlink compensates the absence of THE CHOSEN FIELD; and (d) the link is in the context of general resource information.</p>
+                <p className="text-base text-justify text-font_two mb-3">We will approve link requests from these organizations if we decide that: (a) the link would not make us look unfavorably to ourselves or to our accredited businesses; (b) the organization does not have any negative records with us; (c) the benefit to us from the visibility of the hyperlink compensates the absence of TheChosenField; and (d) the link is in the context of general resource information.</p>
 
                 <p className="text-base text-justify text-font_two mb-3">These organizations may link to our home page so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products or services; and (c) fits within the context of the linking party's site.</p>
 
-                <p className="text-base text-justify text-font_two mb-3">If you are one of the organizations listed in paragraph 2 above and are interested in linking to our website, you must inform us by sending an e-mail to THE CHOSEN FIELD. Please include your name, your organization name, contact information as well as the URL of your site, a list of any URLs from which you intend to link to our Website, and a list of the URLs on our site to which you would like to link. Wait 2-3 weeks for a response.</p>
+                <p className="text-base text-justify text-font_two mb-3">If you are one of the organizations listed in paragraph 2 above and are interested in linking to our website, you must inform us by sending an e-mail to TheChosenField. Please include your name, your organization name, contact information as well as the URL of your site, a list of any URLs from which you intend to link to our Website, and a list of the URLs on our site to which you would like to link. Wait 2-3 weeks for a response.</p>
 
                 <p className="text-base text-justify text-font_two mb-3">Approved organizations may hyperlink to our Website as follows:</p>
 
@@ -96,7 +96,7 @@ const TermsConditions = () => {
                     <li className="ml-10">By use of any other description of our Website being linked to that makes sense within the context and format of content on the linking party's site.</li>
                 </ul>
 
-                <p className="text-base text-justify text-font_two mb-3">No use of THE CHOSEN FIELD's logo or other artwork will be allowed for linking absent a trademark license agreement.</p>
+                <p className="text-base text-justify text-font_two mb-3">No use of TheChosenField's logo or other artwork will be allowed for linking absent a trademark license agreement.</p>
 
                 <h3 className=" text-2xl text-font_two font-medium mb-2">iFrames</h3>
 
