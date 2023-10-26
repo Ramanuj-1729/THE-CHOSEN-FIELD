@@ -1,7 +1,17 @@
+import Brand from "../../components/Header/Brand/Brand";
+import Header from "../../components/Header/Header";
 
 const Contact = () => {
     return (
-        <div>Contact</div>
+        <>
+            <section>
+                <Header bgImage="cta3.png">
+                    <Brand />
+                </Header>
+            </section>
+
+            <div>Contact</div>
+        </>
     );
 }
 
