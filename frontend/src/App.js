@@ -10,6 +10,7 @@ import TermsConditions from "./pages/TermsConditions/TermsConditions";
 import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 
 const App = () => {
   useEffect(() => {
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-conditions" element={<TermsConditions />} />
       </Routes>
+      <ScrollToTopButton />
       <Footer />
     </Router>
   );

@@ -9,12 +9,10 @@
 
 
 
-
-
-2. Contact us
 5. Responsive
 7. Photos
 9. Courses
 10. Quotes
 11. To top
 12. Header for other pages
+13. breadcrumb

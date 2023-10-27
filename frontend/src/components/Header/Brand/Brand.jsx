@@ -1,9 +1,10 @@
-import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
+import ScrollToTopNavLink from '../../ScrollToTopNavLink/ScrollToTopNavLink';
 
 const Brand = () => {
     return (
         <div className="flex items-center py-5">
-            <NavLink to="/" className="text-white text-3xl font-semibold transition ease-in delay-150 hover:text-primary" >TheChosenField</NavLink>
+            <ScrollToTopNavLink to="/" className="text-white text-3xl font-semibold transition ease-in delay-150 hover:text-primary" >TheChosenField</ScrollToTopNavLink>
 
             <div className="ml-auto flex items-center space-x-32">
                 <span className="text-white flex items-center">
