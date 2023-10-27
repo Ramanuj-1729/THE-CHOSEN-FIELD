@@ -13,10 +13,10 @@ const Footer = () => {
                     </ScrollToTopNavLink>
                     <p className="text-base text-font_one font-medium mt-2">Welcome to TheChosenField. <br /> Build Your Future, Choose your Course</p>
                     <span className="text-primary space-x-5 mt-5">
-                        <ScrollToTopNavLink to="https://www.youtube.com/@TheChosenField" target="_blank"><i className="fa-brands fa-youtube p-3 rounded-full bg-transparent_blur transition ease-in delay-150 hover:text-white hover:bg-primary"></i></ScrollToTopNavLink>
-                        <ScrollToTopNavLink to="http://www.instagram.com/_silentplay" target="_blank"><i className="fa-brands fa-square-instagram p-3 rounded-full bg-transparent_blur transition ease-in delay-150 hover:text-white hover:bg-primary"></i></ScrollToTopNavLink>
-                        <ScrollToTopNavLink to="https://twitter.com/qureshisajjad21" target="_blank"><i className="fa-brands fa-twitter p-3 rounded-full bg-transparent_blur transition ease-in delay-150 hover:text-white hover:bg-primary"></i></ScrollToTopNavLink>
-                        <ScrollToTopNavLink to="http://www.quora.com/profile/Sajjad-Qureshi-13?ch=2&oid=246599219&srid=hJROR&target_type=user" target="_blank"><i className="fa-brands fa-quora p-3 rounded-full bg-transparent_blur transition ease-in delay-150 hover:text-white hover:bg-primary"></i></ScrollToTopNavLink>
+                        <NavLink to="https://www.youtube.com/@TheChosenField" target="_blank"><i className="fa-brands fa-youtube p-3 rounded-full bg-transparent_blur transition ease-in delay-150 hover:text-white hover:bg-primary"></i></NavLink>
+                        <NavLink to="http://www.instagram.com/_silentplay" target="_blank"><i className="fa-brands fa-square-instagram p-3 rounded-full bg-transparent_blur transition ease-in delay-150 hover:text-white hover:bg-primary"></i></NavLink>
+                        <NavLink to="https://twitter.com/qureshisajjad21" target="_blank"><i className="fa-brands fa-twitter p-3 rounded-full bg-transparent_blur transition ease-in delay-150 hover:text-white hover:bg-primary"></i></NavLink>
+                        <NavLink to="http://www.quora.com/profile/Sajjad-Qureshi-13?ch=2&oid=246599219&srid=hJROR&target_type=user" target="_blank"><i className="fa-brands fa-quora p-3 rounded-full bg-transparent_blur transition ease-in delay-150 hover:text-white hover:bg-primary"></i></NavLink>
                     </span>
                     <div className="absolute bottom-3 right-40 flex items-center flex-col">
                         <p data-aos="fade" className="text-font_one font-semibold">Get the TheChosenField App</p>

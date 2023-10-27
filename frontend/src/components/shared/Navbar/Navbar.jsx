@@ -1,3 +1,4 @@
+import { useLocation } from "react-router-dom";
 import ScrollToTopNavLink from "../../ScrollToTopNavLink/ScrollToTopNavLink";
 
 const navBgStyle = {
@@ -8,13 +9,16 @@ const navBgStyle = {
 }
 
 const Navbar = () => {
+    const location = useLocation();
+    let path = location.pathname;
+    const active = "text-primary";
     return (
         <div style={navBgStyle} className='flex mx-40 py-5 pl-5 items-center absolute top-[6.3rem] left-0 right-0 z-10'>
             <ul className='flex text-white space-x-10 text-base'>
-                <ScrollToTopNavLink to="/" className="text-primary transition ease-in-out delay-150  hover:text-primary"><li>Home</li></ScrollToTopNavLink>
-                <ScrollToTopNavLink to="/courses" className="transition ease-in-out delay-150 hover:text-primary"><li>Courses</li></ScrollToTopNavLink>
-                <ScrollToTopNavLink to="/about" className="transition ease-in-out delay-150 hover:text-primary"><li>About Us</li></ScrollToTopNavLink>
-                <ScrollToTopNavLink to="/contact" className="transition ease-in-out delay-150 hover:text-primary"><li>Contact Us</li></ScrollToTopNavLink>
+                <ScrollToTopNavLink to="/" className={`transition ease-in-out delay-150 hover:text-primary ${path === "/" ? active : ""}`}><li>Home</li></ScrollToTopNavLink>
+                <ScrollToTopNavLink to="/courses" className={`transition ease-in-out delay-150 hover:text-primary ${path === "/courses" ? active : ""}`}><li>Courses</li></ScrollToTopNavLink>
+                <ScrollToTopNavLink to="/about" className={`transition ease-in-out delay-150 hover:text-primary ${path === "/about" ? active : ""}`}><li>About Us</li></ScrollToTopNavLink>
+                <ScrollToTopNavLink to="/contact" className={`transition ease-in-out delay-150 hover:text-primary ${path === "/contact" ? active : ""}`}><li>Contact Us</li></ScrollToTopNavLink>
             </ul>
         </div>
     );

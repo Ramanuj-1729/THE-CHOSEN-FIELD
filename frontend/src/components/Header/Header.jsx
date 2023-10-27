@@ -2,6 +2,7 @@ import { useState } from "react";
 import { SwiperSlide } from "swiper/react";
 import Slider from "../shared/Slider/Slider";
 import { useLocation } from "react-router-dom";
+import Breadcrumb from "../shared/Breadcrumb/Breadcrumb";
 
 const Header = ({ bgImage, children }) => {
     const headerBackground = {
@@ -38,7 +39,19 @@ const Header = ({ bgImage, children }) => {
                             <button onClick={handleShowVideo} className="text-white text-lg font-medium py-4 px-10 rounded border-2 border-primary hover:border-[#19a095] "><i className="fa-regular fa-circle-play mr-3"></i>Watch Video</button>
                         </span>
                     </div>
-                : null
+                    : path === '/courses' ?
+                        <div className="flex justify-center items-center flex-col mt-80">
+                            <Breadcrumb currPage="Courses" />
+                            <h1 className="text-6xl text-font_one mt-5 font-semibold">Courses</h1>
+                        </div> : path === '/about' ?
+                            <div className="flex justify-center items-center flex-col mt-80">
+                                <Breadcrumb currPage="About" />
+                                <h1 className="text-6xl text-font_one mt-5 font-semibold">About Us</h1>
+                            </div> : path === '/contact' ?
+                                <div className="flex justify-center items-center flex-col mt-80">
+                                    <Breadcrumb currPage="Contact" />
+                                    <h1 className="text-6xl text-font_one mt-5 font-semibold">Contact Us</h1>
+                                </div> : <></>
             }
 
             <div style={{ backgroundColor: 'rgba(0, 0, 0, 0.85)' }} className={`${showVideo ? 'block' : 'hidden'} absolute top-0 left-0 right-0 bottom-0 z-20`}>
