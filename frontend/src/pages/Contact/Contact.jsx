@@ -43,7 +43,7 @@ const Contact = () => {
             width="600"
             height="750px"
             style={{ border: 0 }}
-            allowFullscreen=""
+            allowFullScreen={true}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
