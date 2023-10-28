@@ -11,7 +11,6 @@ import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
-import Admin from "./pages/Admin/Admin";
 
 const App = () => {
   useEffect(() => {
@@ -25,10 +24,9 @@ const App = () => {
 
     <>
       <Router>
-        {window.location.pathname !== "/admin" && <Navbar />}
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/admin" element={<Admin />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/courses" element={<Courses />} />
@@ -36,7 +34,7 @@ const App = () => {
           <Route path="/terms-conditions" element={<TermsConditions />} />
         </Routes>
         <ScrollToTopButton />
-        {window.location.pathname !== "/admin" && <Footer />}
+        <Footer />
       </Router>
     </>
   );
