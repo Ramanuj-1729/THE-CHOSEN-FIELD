@@ -11,4 +11,5 @@
 
 5. Responsive
 7. Photos
-12. not found page
+8. price
+9. educator para

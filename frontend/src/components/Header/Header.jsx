@@ -12,7 +12,7 @@ const Header = ({ bgImage, children }) => {
     const headerBackground = {
         width: '100%',
         height: '100vh',
-        backgroundColor: `${path==='/'? '#9EC4C9' : '#C5C6D0'}`,
+        backgroundColor: `${path === '/' ? '#9EC4C9' : '#C5C6D0'}`,
         backgroundPosition: '85%',
         backgroundPositionY: '100px',
         backgroundImage: `url(images/${bgImage})`,
@@ -41,18 +41,26 @@ const Header = ({ bgImage, children }) => {
                         </span>
                     </div>
                     : path === '/courses' ?
-                        <div className="grid place-content-center mt-80">
+                        <div className="flex items-center justify-center flex-col mt-80">
                             <Breadcrumb currPage="Courses" />
                             <h1 className="text-6xl text-font_one mt-5 font-semibold">Courses</h1>
                         </div> : path === '/about' ?
-                            <div className="grid place-content-center mt-80">
+                            <div className="flex items-center justify-center flex-col mt-80">
                                 <Breadcrumb currPage="About" />
                                 <h1 className="text-6xl text-font_one mt-5 font-semibold">About Us</h1>
                             </div> : path === '/contact' ?
-                                <div className="grid place-content-center mt-80">
+                                <div className="flex items-center justify-center flex-col mt-80">
                                     <Breadcrumb currPage="Contact" />
                                     <h1 className="text-6xl text-font_one mt-5 font-semibold">Contact Us</h1>
-                                </div> : <></>
+                                </div> : path === '/terms-conditions' ?
+                                    <div className="flex items-center justify-center flex-col mt-80">
+                                        <Breadcrumb currPage="Terms and Conditions" />
+                                        <h1 className="text-6xl text-font_one mt-5 font-semibold">Terms and Conditions</h1>
+                                    </div> : path === '/privacy-policy' ?
+                                        <div className="flex items-center justify-center flex-col mt-80">
+                                            <Breadcrumb currPage="Privacy Policy" />
+                                            <h1 className="text-6xl text-font_one mt-5 font-semibold">Privacy Policy</h1>
+                                        </div> : <></>
             }
 
             <div style={{ backgroundColor: 'rgba(0, 0, 0, 0.85)' }} className={`${showVideo ? 'block' : 'hidden'} absolute top-0 left-0 right-0 bottom-0 z-20`}>
