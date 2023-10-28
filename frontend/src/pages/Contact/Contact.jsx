@@ -13,7 +13,7 @@ const Contact = () => {
 
             <div style={{ boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 12px' }} className="flex mx-40 my-20 rounded-md">
                 <div>
-                    <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16607.270911461965!2d74.88130787689062!3d32.727931860710115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391e837176760ec9%3A0x5d1ce12ca148b964!2sMaha%20Maya%20Temple!5e0!3m2!1sen!2sin!4v1698413435566!5m2!1sen!2sin" width="600" height="750px" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16607.270911461965!2d74.88130787689062!3d32.727931860710115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391e837176760ec9%3A0x5d1ce12ca148b964!2sMaha%20Maya%20Temple!5e0!3m2!1sen!2sin!4v1698413435566!5m2!1sen!2sin" width="600" height="750px" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div className="space-y-5 p-10">
                     <h2 className="text-3xl text-font_one font-medium">Contact Us</h2>

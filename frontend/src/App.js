@@ -11,29 +11,34 @@ import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
+import Admin from "./pages/Admin/Admin";
 
 const App = () => {
   useEffect(() => {
     AOS.init({
-        duration: 1000,
-        once: false,
-        easing: 'ease-in-sine',
+      duration: 1000,
+      once: false,
+      easing: 'ease-in-sine',
     });
-}, []);
+  }, []);
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/courses" element={<Courses />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/terms-conditions" element={<TermsConditions />} />
-      </Routes>
-      <ScrollToTopButton />
-      <Footer />
-    </Router>
+
+    <>
+      <Router>
+        {window.location.pathname !== "/admin" && <Navbar />}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-conditions" element={<TermsConditions />} />
+        </Routes>
+        <ScrollToTopButton />
+        {window.location.pathname !== "/admin" && <Footer />}
+      </Router>
+    </>
   );
 }
 
