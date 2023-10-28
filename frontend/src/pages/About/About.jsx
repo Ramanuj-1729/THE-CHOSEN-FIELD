@@ -1,6 +1,7 @@
 import Header from '../../components/Header/Header';
 import Brand from '../../components/Header/Brand/Brand';
 import { NavLink } from 'react-router-dom';
+import Quote from '../../components/shared/Quote/Quote';
 
 const About = () => {
     return (
@@ -10,8 +11,8 @@ const About = () => {
                     <Brand />
                 </Header>
             </section>
-            <div className='px-40 my-10 space-y-10'>
-                <div className='flex items-center space-x-10'>
+            <div className='px-40 my-20'>
+                <div className='flex items-center space-x-10 mb-10'>
                     <img data-aos="fade-right" className='w-[580px] rounded-3xl' src="images/admin2.jpg" alt="instructor-about" />
                     <div data-aos="fade-left">
                         <h2 className='text-4xl font-semibold text-font_one mb-5'>About Us</h2>
@@ -27,6 +28,8 @@ const About = () => {
                     </div>
                     <img data-aos="fade-left" className='w-[580px] rounded-3xl' src="images/admin1.jpg" alt="instructor-story" />
                 </div>
+
+                <Quote quote="You educate a man. You educate a woman. You educate a generation." name="Brigham Young" />
             </div>
         </>
     );

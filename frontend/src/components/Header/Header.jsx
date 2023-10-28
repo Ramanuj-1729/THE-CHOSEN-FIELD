@@ -6,10 +6,13 @@ import Breadcrumb from "../shared/Breadcrumb/Breadcrumb";
 import ScrollToTopNavLink from "../ScrollToTopNavLink/ScrollToTopNavLink";
 
 const Header = ({ bgImage, children }) => {
+    const Location = useLocation();
+    const path = Location.pathname;
+
     const headerBackground = {
         width: '100%',
         height: '100vh',
-        backgroundColor: "#9EC4C9",
+        backgroundColor: `${path==='/'? '#9EC4C9' : '#C5C6D0'}`,
         backgroundPosition: '85%',
         backgroundPositionY: '100px',
         backgroundImage: `url(images/${bgImage})`,
@@ -23,11 +26,8 @@ const Header = ({ bgImage, children }) => {
     const handleShowVideo = () => {
         setShowVideo(current => !current);
     }
-
-    const Location = useLocation();
-    const path = Location.pathname;
     return (
-        <div style={headerBackground} className="px-40">
+        <div style={headerBackground} className="px-40 relative">
             {children}
             {
                 path === '/' ?
@@ -41,15 +41,15 @@ const Header = ({ bgImage, children }) => {
                         </span>
                     </div>
                     : path === '/courses' ?
-                        <div className="flex justify-center items-center flex-col mt-80">
+                        <div className="grid place-content-center mt-80">
                             <Breadcrumb currPage="Courses" />
                             <h1 className="text-6xl text-font_one mt-5 font-semibold">Courses</h1>
                         </div> : path === '/about' ?
-                            <div className="flex justify-center items-center flex-col mt-80">
+                            <div className="grid place-content-center mt-80">
                                 <Breadcrumb currPage="About" />
                                 <h1 className="text-6xl text-font_one mt-5 font-semibold">About Us</h1>
                             </div> : path === '/contact' ?
-                                <div className="flex justify-center items-center flex-col mt-80">
+                                <div className="grid place-content-center mt-80">
                                     <Breadcrumb currPage="Contact" />
                                     <h1 className="text-6xl text-font_one mt-5 font-semibold">Contact Us</h1>
                                 </div> : <></>

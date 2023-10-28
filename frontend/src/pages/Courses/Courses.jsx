@@ -2,8 +2,9 @@ import Header from "../../components/Header/Header";
 import Brand from "../../components/Header/Brand/Brand";
 import CourseCard from "../../components/CourseCard/CourseCard";
 import coursesData from "../../coursesData.json";
-import  Pagination  from "../../components/shared/Pagination/Pagination";
+import Pagination from "../../components/shared/Pagination/Pagination";
 import { useState } from "react";
+import Quote from "../../components/shared/Quote/Quote";
 
 const Courses = () => {
     const [currentPage, setCurrentPage] = useState(1);
@@ -43,6 +44,8 @@ const Courses = () => {
                     }
                 </div>
                 <Pagination count={Math.ceil(coursesData.length / itemsPerPage)} page={currentPage} onChange={handlePageChange} />
+
+                <Quote quote="An investment in knowledge pays the best interest." name="Benjamin Franklin" />
             </div>
         </>
     );

@@ -4,13 +4,13 @@ import Header from "../../components/Header/Header";
 import React from "react";
 
 const Contact = () => {
+  const [loading, setLoading] = React.useState(false);
+  const [success, setSuccess] = React.useState(false);
   function submitForm(e) {
+    setLoading(true);
     const formEle = document.querySelector("form");
     e.preventDefault();
-    // alert("clicked");
     const formData = new FormData(formEle);
-
-    // console.log(formData);
 
     fetch(process.env.REACT_APP_SHEET_URL, {
       method: "POST",
@@ -18,7 +18,12 @@ const Contact = () => {
     })
       .then((response) => response.json())
       .then((data) => {
-        alert(data.success);
+        formEle.reset();
+        setLoading(false);
+        setSuccess(true);
+        setTimeout(() => {
+          setSuccess(false);
+        }, 2000);
       })
       .catch((error) => {
         alert(error);
@@ -84,18 +89,21 @@ const Contact = () => {
               type="text"
               name="name"
               placeholder="Name"
+              required
             />
             <input
               className="border-[1px] border-gray p-2 rounded-sm text-font_two hover:font-medium hover:border-primary focus:font-medium focus:border-primary"
               type="email"
               name="email"
               placeholder="Email"
+              required
             />
             <input
               className="border-[1px] border-gray p-2 rounded-sm text-font_two hover:font-medium hover:border-primary focus:font-medium focus:border-primary"
               type="text"
               name="subject"
               placeholder="Subject"
+              required
             />
             <textarea
               className="border-[1px] border-gray p-2 rounded-sm text-font_two hover:font-medium hover:border-primary focus:font-medium focus:border-primary"
@@ -104,10 +112,17 @@ const Contact = () => {
               cols="30"
               rows="5"
               placeholder="Write message here"
+              required
             ></textarea>
-            <button className="text-white bg-primary self-start text-lg font-medium py-3 px-8 rounded mr-5 transition ease-in-out delay-150 hover:bg-[#19a095]">
-              Send Message
-            </button>
+            <div className="flex items-center">
+              <button className="text-white bg-primary self-start text-lg font-medium py-3 px-8 rounded mr-5 transition ease-in-out delay-150 hover:bg-[#19a095]">
+                Send Message
+              </button>
+              {loading && (<div className="w-10 h-10">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><radialGradient id="a12" cx=".66" fx=".66" cy=".3125" fy=".3125" gradientTransform="scale(1.5)"><stop offset="0" stopColor="#1EB2A6"></stop><stop offset=".3" stopColor="#1EB2A6" stopOpacity=".9"></stop><stop offset=".6" stopColor="#1EB2A6" stopOpacity=".6"></stop><stop offset=".8" stopColor="#1EB2A6" stopOpacity=".3"></stop><stop offset="1" stopColor="#1EB2A6" stopOpacity="0"></stop></radialGradient><circle transform-origin="center" fill="none" stroke="url(#a12)" strokeWidth="23" strokeLinecap="round" strokeDasharray="200 1000" strokeDashoffset="0" cx="100" cy="100" r="70"><animateTransform type="rotate" attributeName="transform" calcMode="spline" dur="2" values="360;0" keyTimes="0;1" keySplines="0 0 1 1" repeatCount="indefinite"></animateTransform></circle><circle transform-origin="center" fill="none" opacity=".2" stroke="#1EB2A6" strokeWidth="23" strokeLinecap="round" cx="100" cy="100" r="70"></circle></svg>
+              </div>)}
+              {success && (<i data-aos="fade" className="fa-solid fa-circle-check text-3xl text-primary"></i>)}
+            </div>
           </form>
           <div>
             <h4 className="text-xl text-font_one font-medium mb-2">

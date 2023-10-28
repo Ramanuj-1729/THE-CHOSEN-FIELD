@@ -1,5 +1,6 @@
 import Section from "../Section/Section";
 import { NavLink } from "react-router-dom";
+import Quote from "../shared/Quote/Quote";
 
 const OurTeam = () => {
     return (
@@ -14,6 +15,8 @@ const OurTeam = () => {
                 <img className="w-56 mb-2" src="images/Unacademy-logo.png" alt="" />
                 <h5 className="text-xl text-font_two font-medium">Unacademy, Educator</h5>
             </div>
+
+            <Quote quote="Live as if you were to die tomorrow. Learn as if you were to live forever." name="Mahatma Gandhi" />
         </Section>
     );
 }
