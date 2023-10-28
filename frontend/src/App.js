@@ -11,6 +11,7 @@ import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
+import NotFound from "./pages/NotFound/NotFound";
 
 const App = () => {
   useEffect(() => {
@@ -20,11 +21,13 @@ const App = () => {
       easing: 'ease-in-sine',
     });
   }, []);
+
+  const includedPaths = ["/", "/about", "/contact", "/courses", "/privacy-policy", "/terms-conditions"];
   return (
 
     <>
       <Router>
-        <Navbar />
+        {includedPaths.includes(window.location.pathname) && <Navbar />}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -32,9 +35,10 @@ const App = () => {
           <Route path="/courses" element={<Courses />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-conditions" element={<TermsConditions />} />
+          <Route path="*" Component={NotFound} />
         </Routes>
         <ScrollToTopButton />
-        <Footer />
+        {includedPaths.includes(window.location.pathname) && <Footer />}
       </Router>
     </>
   );
