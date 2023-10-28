@@ -11,5 +11,4 @@
 
 5. Responsive
 7. Photos
-9. Courses
 10. Quotes

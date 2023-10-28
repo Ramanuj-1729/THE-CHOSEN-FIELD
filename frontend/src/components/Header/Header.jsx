@@ -3,6 +3,7 @@ import { SwiperSlide } from "swiper/react";
 import Slider from "../shared/Slider/Slider";
 import { useLocation } from "react-router-dom";
 import Breadcrumb from "../shared/Breadcrumb/Breadcrumb";
+import ScrollToTopNavLink from "../ScrollToTopNavLink/ScrollToTopNavLink";
 
 const Header = ({ bgImage, children }) => {
     const headerBackground = {
@@ -35,7 +36,7 @@ const Header = ({ bgImage, children }) => {
                         <div className="text-6xl font-semibold text-white my-5">Build Your <br /> Future, Choose <br /> your Course</div>
                         <p className="text-base text-white opacity-[0.8] mb-6">Buy your course now & start your preparation</p>
                         <span>
-                            <button className="text-white bg-primary text-lg font-medium py-4 px-10 rounded mr-5 transition ease-in-out delay-150 hover:bg-[#19a095]">View Courses</button>
+                            <ScrollToTopNavLink to="/courses" className="text-white bg-primary text-lg font-medium py-4 px-10 rounded mr-5 transition ease-in-out delay-150 hover:bg-[#19a095]">View Courses</ScrollToTopNavLink>
                             <button onClick={handleShowVideo} className="text-white text-lg font-medium py-4 px-10 rounded border-2 border-primary hover:border-[#19a095] "><i className="fa-regular fa-circle-play mr-3"></i>Watch Video</button>
                         </span>
                     </div>
