@@ -23,6 +23,7 @@ const App = () => {
   }, []);
 
   const includedPaths = ["/", "/about", "/contact", "/courses", "/privacy-policy", "/terms-conditions"];
+
   return (
 
     <>

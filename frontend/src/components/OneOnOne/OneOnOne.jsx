@@ -19,10 +19,10 @@ const OneOnOne = () => {
     return (
         <Section heading="One-on-One Interaction" subHeading="Let's connect for a personalized conversation tailored just for you!" bgColor="#F8F8F8">
             <div data-aos="zoom-in-up" style={{ boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 12px' }} className='flex p-5 rounded-xl bg-white'>
-                <img style={{ boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px' }} className='w-[420px] rounded-md mr-10' src="images/OneOnOne.png" alt="" />
+                <img style={{ boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px' }} className='wideScreen:w-[480px] rounded-md mr-10' src="images/OneOnOne.png" alt="" />
                 <div className='flex flex-col justify-between pl-10 border-l-2 border-dashed border-gray'>
-                    <div className='mt-2 w-[500px]'>
-                        <h2 className='text-3xl text-font_one font-semibold mb-2'>Personalized 1:1 Experience</h2>
+                    <div className='mt-2'>
+                        <h2 className='text-3xl text-font_one font-semibold wideScreen:mb-5'>Personalized 1:1 Experience</h2>
                         <p className='text-base text-font_two font-normal text-justify'>We offer weekly One-on-One interaction to our students. Interested students can register by clicking on the button below and get a sneak peek of the same</p>
                     </div>
 
