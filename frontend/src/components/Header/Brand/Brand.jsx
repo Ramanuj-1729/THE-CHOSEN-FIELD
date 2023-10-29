@@ -6,7 +6,7 @@ const Brand = () => {
         <div className="flex items-center py-5">
             <ScrollToTopNavLink to="/" className="text-white text-3xl font-semibold transition ease-in delay-150 hover:text-primary" >TheChosenField</ScrollToTopNavLink>
 
-            <div className="ml-auto flex items-center space-x-32">
+            <div className="ml-auto flex items-center wideScreen:space-x-20">
                 <span className="text-white flex items-center">
                     <i className="fa-solid fa-phone text-3xl"></i>
                     <span className="text-lg ml-3">
