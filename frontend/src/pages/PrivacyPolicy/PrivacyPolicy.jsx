@@ -9,7 +9,7 @@ const PrivacyPolicy = () => {
                     <Brand />
                 </Header>
             </section>
-            <div className='wideScreen:px-36 desktop:px-28 text-justify py-20'>
+            <div className='wideScreen:px-36 largeTablet:px-28 text-justify py-20'>
                 <h1 className="text-4xl font-semibold text-primary mb-5">Privacy Policy</h1>
                 <p className="text-base text-justify text-font_two font-normal mb-5">Last updated: October 24, 2023</p>
                 <p className="text-base text-justify text-font_two font-normal mb-5">This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>

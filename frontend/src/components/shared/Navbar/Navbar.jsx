@@ -13,7 +13,7 @@ const Navbar = () => {
     let path = location.pathname;
     const active = "text-primary";
     return (
-        <div style={navBgStyle} className='flex mx-40 py-5 pl-5 items-center absolute top-[6.3rem] left-0 right-0 z-10'>
+        <div style={navBgStyle} className='flex desktop:mx-36 largeTablet:mx-20 py-5 pl-5 items-center absolute top-[6.3rem] left-0 right-0 z-10'>
             <ul className='flex text-white space-x-10 text-base'>
                 <ScrollToTopNavLink to="/" className={`transition ease-in-out delay-150 hover:text-primary ${path === "/" ? active : ""}`}><li>Home</li></ScrollToTopNavLink>
                 <ScrollToTopNavLink to="/courses" className={`transition ease-in-out delay-150 hover:text-primary ${path === "/courses" ? active : ""}`}><li>Courses</li></ScrollToTopNavLink>

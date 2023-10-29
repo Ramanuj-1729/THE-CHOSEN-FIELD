@@ -10,7 +10,7 @@ const TermsConditions = () => {
                     <Brand />
                 </Header>
             </section>
-            <div className="wideScreen:px-36 desktop:px-28 py-20">
+            <div className="wideScreen:px-36 largeTablet:px-28 py-20">
                 <h2 className="text-4xl font-semibold text-primary mb-5">Terms and Conditions</h2>
 
                 <p className="text-xl font-medium text-font_one mb-5">Welcome to TheChosenField!</p>

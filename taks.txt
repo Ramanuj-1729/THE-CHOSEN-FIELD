@@ -10,7 +10,7 @@
 
 
 5. Responsive
-7. Photos
+7. Photos and alt tags
 8. price
 9. educator para
 10. Courses images and links

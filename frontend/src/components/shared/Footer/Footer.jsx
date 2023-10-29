@@ -4,8 +4,8 @@ import ScrollToTopNavLink from "../../ScrollToTopNavLink/ScrollToTopNavLink";
 const Footer = () => {
     return (
 
-        <div className="bg-[#9EC4C9] px-40 relative">
-            <div className="flex justify-between py-16">
+        <div className="bg-[#9EC4C9] relative">
+            <div className="flex justify-between desktop:mx-36 largeTablet:mx-16 py-16">
                 <div className="flex flex-col">
                     <ScrollToTopNavLink to="/">
                         <img className="w-16" src="images/THE_CHOSEN_FIELD_LOGO.png" alt="logo" />
@@ -18,7 +18,7 @@ const Footer = () => {
                         <NavLink to="https://twitter.com/qureshisajjad21" target="_blank"><i className="fa-brands fa-twitter p-3 rounded-full bg-transparent_blur transition ease-in delay-150 hover:text-white hover:bg-primary"></i></NavLink>
                         <NavLink to="http://www.quora.com/profile/Sajjad-Qureshi-13?ch=2&oid=246599219&srid=hJROR&target_type=user" target="_blank"><i className="fa-brands fa-quora p-3 rounded-full bg-transparent_blur transition ease-in delay-150 hover:text-white hover:bg-primary"></i></NavLink>
                     </span>
-                    <div className="absolute bottom-3 right-40 flex items-center flex-col">
+                    <div className="absolute bottom-3 desktop:right-40 largeTablet:right-24 flex items-center flex-col">
                         <p data-aos="fade" className="text-font_one font-semibold">Get the TheChosenField App</p>
                         <NavLink data-aos="flip-left" to="https://play.google.com/store/apps/details?id=co.diaz.wjgqz" target="_blank"><img className="w-40" src="images/google-play-badge.png" alt="google-play-badge" /></NavLink>
                     </div>
