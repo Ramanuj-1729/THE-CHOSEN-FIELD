@@ -23,8 +23,8 @@ const Courses = () => {
                     <Brand />
                 </Header>
             </section>
-            <div className="px-40 py-40 flex items-center justify-center flex-col">
-                <div className="grid grid-cols-2 gap-8 mb-10">
+            <div className="wideScreen:px-36 desktop:px-24 py-40 flex items-center justify-center flex-col">
+                <div className="grid grid-cols-2 wideScreen:gap-8 desktop:gap-6 mb-10">
                     {
                         coursesData.map((course, index) => (
                             <CourseCard

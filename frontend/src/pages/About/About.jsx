@@ -11,7 +11,7 @@ const About = () => {
                     <Brand />
                 </Header>
             </section>
-            <div className='px-40 my-20'>
+            <div className='wideScreen:px-36 desktop:px-28 my-20'>
                 <div className='flex items-center space-x-10 mb-10'>
                     <img data-aos="fade-right" className='w-[580px] rounded-3xl' src="images/admin2.jpg" alt="instructor-about" />
                     <div data-aos="fade-left">
