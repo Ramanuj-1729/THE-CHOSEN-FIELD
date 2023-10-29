@@ -14,3 +14,4 @@
 8. price
 9. educator para
 10. Courses images and links
+11. header video Responsive
