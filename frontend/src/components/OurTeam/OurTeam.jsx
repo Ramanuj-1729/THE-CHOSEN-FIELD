@@ -5,7 +5,7 @@ import ScrollToTopNavLink from "../ScrollToTopNavLink/ScrollToTopNavLink";
 const OurTeam = () => {
     return (
         <Section heading="Our Team" subHeading="Meet your Educator" bgColor="#FFFFFF" >
-            <ScrollToTopNavLink to="/about" className='absolute largeTablet:top-[115px] mediumTablet:top-[70px] largePhone:top-[35px] smallPhone:top-[30px] largeTablet:right-0 mediumTablet:-right-8 smallTablet:-right-2 largePhone:right-0 smallPhone:-right-3 border-2 border-primary desktop:px-10 largeTablet:px-8 mediumTablet:px-7 largePhone:px-5 smallPhone:px-3 mediumTablet:py-2 smallPhone:py-1 text-font_two desktop:text-lg largePhone:text-base smallPhone:text-sm font-medium rounded transition ease-in-out delay-150 hover:bg-primary hover:text-white'>Know More</ScrollToTopNavLink>
+            <ScrollToTopNavLink to="/about" className='absolute largeTablet:top-[115px] mediumTablet:top-[70px] largePhone:top-[35px] smallPhone:top-[30px] largeTablet:right-0 mediumTablet:-right-8 smallTablet:-right-2 largePhone:right-0 smallPhone:-right-3 smallTablet:border-2 smallPhone:border-[1px] border-primary desktop:px-10 largeTablet:px-8 mediumTablet:px-7 largePhone:px-5 smallPhone:px-3 mediumTablet:py-2 smallPhone:py-1 text-font_two desktop:text-lg largePhone:text-base smallPhone:text-sm font-medium rounded transition ease-in-out delay-150 hover:bg-primary hover:text-white'>Know More</ScrollToTopNavLink>
             <div data-aos="fade-up" className="flex items-center flex-col">
                 <img className="largeTablet:w-52 smallPhone:w-40 rounded-full border-4 border-primary mb-2" src="images/admin1.jpg" alt="" />
                 <h3 className="smallTablet:text-2xl largePhone:text-xl text-font_one font-bold mb-1">Sajad Ahmad</h3>

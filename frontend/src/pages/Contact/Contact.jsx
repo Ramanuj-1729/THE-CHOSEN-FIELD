@@ -56,7 +56,7 @@ const Contact = () => {
         <div className="largeTablet:space-y-5 largePhone:space-y-5 smallPhone:space-y-2 desktop:p-10 largeTablet:p-6 largePhone:p-6 smallPhone:p-5 largeTablet:w-1/2 smallPhone:w-full">
           <h2 className="desktop:text-3xl largeTablet:text-2xl largePhone:text-3xl smallPhone:text-2xl text-font_one font-medium">Contact Us</h2>
           <p className="desktop:text-base largeTablet:text-sm largePhone:text-base smallPhone:text-sm text-font_two opacity-80">We're open for any suggestion or just to have a chat</p>
-          <div className="flex space-x-2">
+          <div className="flex largePhone:flex-nowrap smallPhone:flex-wrap largePhone:space-x-2 smallPhone:justify-start">
             <div className="largeTablet:basis-1/2">
               <span className="desktop:text-base largeTablet:text-sm largePhone:text-base smallPhone:text-sm text-font_one font-medium">
                 ADDRESS
@@ -126,7 +126,7 @@ const Contact = () => {
             <h4 className="desktop:text-xl largeTablet:text-lg largePhone:text-xl smallPhone:text-lg text-font_one font-medium mb-2">
               Follow us here
             </h4>
-            <div className="space-x-5 desktop:text-base largeTablet:text-sm largePhone:text-base smallPhone:text-sm font-medium text-primary">
+            <div className="largePhone:space-x-5 smallPhone:space-x-2 desktop:text-base largeTablet:text-sm largePhone:text-base smallPhone:text-sm font-medium text-primary">
               <NavLink to="https://www.youtube.com/@TheChosenField">
                 Youtube
               </NavLink>

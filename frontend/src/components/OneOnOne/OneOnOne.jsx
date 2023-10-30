@@ -18,7 +18,7 @@ const OneOnOne = () => {
 
     return (
         <Section heading="One-on-One Interaction" subHeading="Let's connect for a personalized conversation tailored just for you!" bgColor="#F8F8F8">
-            <div data-aos="zoom-in-up" style={{ boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 12px' }} className='flex largeTablet:flex-row smallPhone:flex-col p-5 rounded-xl bg-white'>
+            <div data-aos="fade" style={{ boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 12px' }} className='flex largeTablet:flex-row smallPhone:flex-col p-5 rounded-xl bg-white'>
                 <img style={{ boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px' }} className='wideScreen:w-[480px] desktop:w-[430px] largeTablet:w-[380px] largePhone:w-[500px] smallPhone:w-[250px] largeTablet:h-auto largePhone:h-[400px] smallPhone:h-[250px] rounded-md largeTablet:mr-10 largeTablet:mb-0  smallPhone:mb-5' src="images/OneOnOne.png" alt="" />
                 <div className='flex flex-col justify-between largeTablet:pl-10 largeTablet:border-l-2 largeTablet:border-t-0 smallPhone:border-t-2 border-dashed border-gray'>
                     <div className='mt-2'>
@@ -55,7 +55,7 @@ const OneOnOne = () => {
                         </div>
                     </div>
 
-                    <NavLink to="https://meetpro.club/TheChosenField" className="text-primary border-2 border-primary text-lg font-medium desktop:py-3 largePhone:py-2 smallPhone:py-1 flex justify-center rounded-full mr-5 transition ease-in-out delay-150 hover:bg-primary hover:text-white">Book Now</NavLink>
+                    <NavLink to="https://meetpro.club/TheChosenField" className="w-full text-primary border-2 border-primary text-lg font-medium desktop:py-3 largePhone:py-2 smallPhone:py-1 flex justify-center rounded-full mr-5 transition ease-in-out delay-150 hover:bg-primary hover:text-white">Book Now</NavLink>
                 </div>
             </div>
         </Section>

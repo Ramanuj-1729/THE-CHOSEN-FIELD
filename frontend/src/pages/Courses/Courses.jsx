@@ -8,14 +8,14 @@ import Quote from "../../components/shared/Quote/Quote";
 
 const Courses = () => {
     const [currentPage, setCurrentPage] = useState(1);
-    const [itemsPerPage, setItemsPerPage] = useState(6);
+    // const [itemsPerPage, setItemsPerPage] = useState(6);
 
     const handlePageChange = (event, value) => {
         setCurrentPage(value);
     };
 
-    const indexOfLastItem = currentPage * itemsPerPage;
-    const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+    // const indexOfLastItem = currentPage * itemsPerPage;
+    // const indexOfFirstItem = indexOfLastItem - itemsPerPage;
     return (
         <>
             <section>
@@ -43,7 +43,7 @@ const Courses = () => {
                         ))
                     }
                 </div>
-                <Pagination count={Math.ceil(coursesData.length / itemsPerPage)} page={currentPage} onChange={handlePageChange} />
+                <Pagination count={Math.ceil(coursesData.length / 6)} page={currentPage} onChange={handlePageChange} />
 
                 <Quote quote="An investment in knowledge pays the best interest." name="Benjamin Franklin" />
             </div>
