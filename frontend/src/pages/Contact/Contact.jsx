@@ -39,9 +39,9 @@ const Contact = () => {
 
       <div
         style={{ boxShadow: "rgba(0, 0, 0, 0.08) 0px 4px 12px" }}
-        className="flex largeTablet:flex-row mediumTablet:flex-col wideScreen:mx-28 desktop:mx-24 mediumTablet:mx-16 my-20 rounded-md"
+        className="flex largeTablet:flex-row mediumTablet:flex-col smallTablet:flex-col wideScreen:mx-28 desktop:mx-24 mediumTablet:mx-16 smallTablet:mx-8 my-20 rounded-md"
       >
-        <div className="largeTablet:w-1/2 mediumTablet:w-full">
+        <div className="largeTablet:w-1/2 smallTablet:w-full">
           <iframe
             className="w-full"
             title="map"
@@ -53,27 +53,27 @@ const Contact = () => {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <div className="largeTablet:space-y-5 mediumTablet:space-y-5 desktop:p-10 largeTablet:p-6 mediumTablet:p-6 largeTablet:w-1/2 mediumTablet:w-full">
-          <h2 className="desktop:text-3xl largeTablet:text-2xl mediumTablet:text-3xl text-font_one font-medium">Contact Us</h2>
-          <p className="desktop:text-base largeTablet:text-sm mediumTablet:text-base text-font_two opacity-80">We're open for any suggestion or just to have a chat</p>
+        <div className="largeTablet:space-y-5 smallTablet:space-y-5 desktop:p-10 largeTablet:p-6 smallTablet:p-6 largeTablet:w-1/2 smallTablet:w-full">
+          <h2 className="desktop:text-3xl largeTablet:text-2xl smallTablet:text-3xl text-font_one font-medium">Contact Us</h2>
+          <p className="desktop:text-base largeTablet:text-sm smallTablet:text-base text-font_two opacity-80">We're open for any suggestion or just to have a chat</p>
           <div className="flex space-x-2">
             <div className="largeTablet:basis-1/2">
-              <span className="desktop:text-base largeTablet:text-sm mediumTablet:text-base text-font_one font-medium">
+              <span className="desktop:text-base largeTablet:text-sm smallTablet:text-base text-font_one font-medium">
                 ADDRESS
               </span>
-              <p className="text-font_two desktop:text-sm largeTablet:text-xs mediumTablet:text-sm leading-6 mt-1">
+              <p className="text-font_two desktop:text-sm largeTablet:text-xs smallTablet:text-sm leading-6 mt-1">
                 Mahamaya Mandir lane, Raika, Narwal, Jammu 180006
               </p>
             </div>
             <div>
-              <span className="desktop:text-base largeTablet:text-sm mediumTablet:text-sm text-font_one font-medium">EMAIL</span>
-              <p className="text-font_two desktop:text-sm largeTablet:text-xs mediumTablet:text-sm leading-6 mt-1">
+              <span className="desktop:text-base largeTablet:text-sm smallTablet:text-sm text-font_one font-medium">EMAIL</span>
+              <p className="text-font_two desktop:text-sm largeTablet:text-xs smallTablet:text-sm leading-6 mt-1">
                 info@thechosenfield.com
               </p>
             </div>
-            <div className="largeTablet:basis-5/12 mediumTablet:basis-1/2">
-              <span className="desktop:text-base largeTablet:text-sm mediumTablet:text-sm text-font_one font-medium">PHONE</span>
-              <p className="text-font_two desktop:text-sm largeTablet:text-xs mediumTablet:text-sm leading-6 mt-1">
+            <div className="largeTablet:basis-5/12 mediumTablet:basis-1/2 smallTablet:basis-1/2">
+              <span className="desktop:text-base largeTablet:text-sm smallTablet:text-sm text-font_one font-medium">PHONE</span>
+              <p className="text-font_two desktop:text-sm largeTablet:text-xs smallTablet:text-sm leading-6 mt-1">
                 +91-7051144137
               </p>
             </div>
@@ -83,28 +83,28 @@ const Contact = () => {
             onSubmit={(e) => submitForm(e)}
           >
             <input
-              className="border-[1px] border-gray desktop:p-2 largeTablet:p-1 mediumTablet:p-2 rounded-sm text-font_two desktop:hover:font-medium mediumTablet:hover:font-normal hover:border-primary focus:font-medium focus:border-primary"
+              className="border-[1px] border-gray desktop:p-2 largeTablet:p-1 smallTablet:p-2 rounded-sm text-font_two desktop:hover:font-medium smallTablet:hover:font-normal hover:border-primary focus:font-medium focus:border-primary"
               type="text"
               name="name"
               placeholder="Name"
               required
             />
             <input
-              className="border-[1px] border-gray desktop:p-2 largeTablet:p-1 mediumTablet:p-2 rounded-sm text-font_two desktop:hover:font-medium mediumTablet:hover:font-normal hover:border-primary focus:font-medium focus:border-primary"
+              className="border-[1px] border-gray desktop:p-2 largeTablet:p-1 smallTablet:p-2 rounded-sm text-font_two desktop:hover:font-medium smallTablet:hover:font-normal hover:border-primary focus:font-medium focus:border-primary"
               type="email"
               name="email"
               placeholder="Email"
               required
             />
             <input
-              className="border-[1px] border-gray desktop:p-2 largeTablet:p-1 mediumTablet:p-2 rounded-sm text-font_two desktop:hover:font-medium mediumTablet:hover:font-normal hover:border-primary focus:font-medium focus:border-primary"
+              className="border-[1px] border-gray desktop:p-2 largeTablet:p-1 smallTablet:p-2 rounded-sm text-font_two desktop:hover:font-medium smallTablet:hover:font-normal hover:border-primary focus:font-medium focus:border-primary"
               type="text"
               name="subject"
               placeholder="Subject"
               required
             />
             <textarea
-              className="border-[1px] border-gray desktop:p-2 largeTablet:p-1 mediumTablet:p-2 rounded-sm text-font_two desktop:hover:font-medium mediumTablet:hover:font-normal hover:border-primary focus:font-medium focus:border-primary"
+              className="border-[1px] border-gray desktop:p-2 largeTablet:p-1 smallTablet:p-2 rounded-sm text-font_two desktop:hover:font-medium smallTablet:hover:font-normal hover:border-primary focus:font-medium focus:border-primary"
               name="message"
               id=""
               cols="30"
@@ -113,20 +113,20 @@ const Contact = () => {
               required
             ></textarea>
             <div className="flex items-center">
-              <button className="text-white bg-primary self-start desktop:text-lg largeTablet:text-base mediumTablet:text-lg font-medium desktop:py-3 largeTablet:py-2 mediumTablet:py-3 desktop:px-8 largeTablet:px-6 mediumTablet:px-8 rounded mr-5 transition ease-in-out delay-150 hover:bg-[#19a095]">
+              <button className="text-white bg-primary self-start desktop:text-lg largeTablet:text-base mediumTablet:text-lg smallTablet:text-base font-medium desktop:py-3 largeTablet:py-2 mediumTablet:py-3 smallTablet:py-2 desktop:px-8 largeTablet:px-6 mediumTablet:px-8 smallTablet:px-6 rounded mr-5 transition ease-in-out delay-150 hover:bg-[#19a095]">
                 Send Message
               </button>
-              {loading && (<div className="desktop:w-10 largeTablet:w-8 mediumTablet:w-10 desktop:h-10 largeTablet:h-8 mediumTablet:h-10">
+              {loading && (<div className="desktop:w-10 largeTablet:w-8 mediumTablet:w-10 smallTablet:w-8 desktop:h-10 largeTablet:h-8 mediumTablet:h-8 smallTablet:h-10">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><radialGradient id="a12" cx=".66" fx=".66" cy=".3125" fy=".3125" gradientTransform="scale(1.5)"><stop offset="0" stopColor="#1EB2A6"></stop><stop offset=".3" stopColor="#1EB2A6" stopOpacity=".9"></stop><stop offset=".6" stopColor="#1EB2A6" stopOpacity=".6"></stop><stop offset=".8" stopColor="#1EB2A6" stopOpacity=".3"></stop><stop offset="1" stopColor="#1EB2A6" stopOpacity="0"></stop></radialGradient><circle transform-origin="center" fill="none" stroke="url(#a12)" strokeWidth="23" strokeLinecap="round" strokeDasharray="200 1000" strokeDashoffset="0" cx="100" cy="100" r="70"><animateTransform type="rotate" attributeName="transform" calcMode="spline" dur="2" values="360;0" keyTimes="0;1" keySplines="0 0 1 1" repeatCount="indefinite"></animateTransform></circle><circle transform-origin="center" fill="none" opacity=".2" stroke="#1EB2A6" strokeWidth="23" strokeLinecap="round" cx="100" cy="100" r="70"></circle></svg>
               </div>)}
-              {success && (<i data-aos="fade" className="fa-solid fa-circle-check desktop:text-3xl largeTablet:text-2xl mediumTablet:text-3xl text-primary"></i>)}
+              {success && (<i data-aos="fade" className="fa-solid fa-circle-check desktop:text-3xl largeTablet:text-2xl mediumTablet:text-3xl smallTablet:text-2xl text-primary"></i>)}
             </div>
           </form>
           <div>
-            <h4 className="desktop:text-xl largeTablet:text-lg mediumTablet:text-xl text-font_one font-medium mb-2">
+            <h4 className="desktop:text-xl largeTablet:text-lg smallTablet:text-xl text-font_one font-medium mb-2">
               Follow us here
             </h4>
-            <div className="space-x-5 desktop:text-base largeTablet:text-sm mediumTablet:text-base font-medium text-primary">
+            <div className="space-x-5 desktop:text-base largeTablet:text-sm smallTablet:text-base font-medium text-primary">
               <NavLink to="https://www.youtube.com/@TheChosenField">
                 Youtube
               </NavLink>

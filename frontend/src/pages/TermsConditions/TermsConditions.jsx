@@ -10,10 +10,10 @@ const TermsConditions = () => {
                     <Brand />
                 </Header>
             </section>
-            <div className="wideScreen:px-36 largeTablet:px-28 mediumTablet:px-10 py-20">
-                <h2 className="text-4xl font-semibold text-primary mb-5">Terms and Conditions</h2>
+            <div className="wideScreen:px-36 largeTablet:px-28 mediumTablet:px-10 smallTablet:px-8 py-20">
+                <h2 className="mediumTablet:text-4xl smallTablet:text-3xl  font-semibold text-primary mb-5">Terms and Conditions</h2>
 
-                <p className="text-xl font-medium text-font_one mb-5">Welcome to TheChosenField!</p>
+                <p className="mediumTablet:text-xl smallTablet:text-lg font-medium text-font_one mb-5">Welcome to TheChosenField!</p>
 
                 <p className="text-base text-justify text-font_two mb-3"><strong className="text-xl text-font_one">T</strong>hese terms and conditions outline the rules and regulations for the use of TheChosenField's Website, located at <NavLink to="/" className=" text-primary">https://www.thechosenfield.com</NavLink>.</p>
 

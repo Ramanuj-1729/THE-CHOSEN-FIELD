@@ -13,7 +13,7 @@ const Header = ({ bgImage, children }) => {
         width: '100%',
         height: '100vh',
         backgroundColor: `${path === '/' ? '#9EC4C9' : '#C5C6D0'}`,
-        backgroundPosition: `${window.screen.width >= 850 ? '85%' : '120%'}`,
+        backgroundPositionX: `${window.screen.width >= 850 ? '85%' : window.screen.width >= 745 ? '130%' : window.screen.width >= 680 ? '150%' : window.screen.width >= 630 ? '200%' : window.screen.width >= 600 ? '270%' : '150%'}`,
         backgroundPositionY: '100px',
         backgroundImage: `url(images/${bgImage})`,
         backgroundSize: 'contain',
@@ -27,39 +27,39 @@ const Header = ({ bgImage, children }) => {
         setShowVideo(current => !current);
     }
     return (
-        <div style={headerBackground} className="desktop:px-36 largeTablet:px-20 mediumTablet:px-12 relative">
+        <div style={headerBackground} className="desktop:px-36 largeTablet:px-20 mediumTablet:px-12 smallTablet:px-8 relative">
             {children}
             {
                 path === '/' ?
                     <div data-aos="fade-up" className="header-containt absolute mt-52">
                         <span className="text-sm font-medium text-primary">WELCOME TO <strong>TheChosenField</strong></span>
-                        <h1 className="desktop:text-6xl largeTablet:text-5xl mediumTablet:text-4xl font-semibold text-white largeTablet:my-5 mediumTablet:my-4">Build Your <br /> Future, Choose <br /> your Course</h1>
+                        <h1 className="desktop:text-6xl largeTablet:text-5xl smallTablet:text-4xl font-semibold text-white largeTablet:my-5 mediumTablet:my-4 smallTablet:my-3">Build Your <br /> Future, Choose <br /> your Course</h1>
                         <p className="text-base text-white opacity-[0.8] mb-6">Buy your course now & start your preparation</p>
                         <span>
-                            <ScrollToTopNavLink to="/courses" className="text-white bg-primary desktop:text-lg mediumTablet:text-base font-medium border-2 border-primary desktop:py-4 largeTablet:py-3 mediumTablet:py-2 desktop:px-10 largeTablet:px-8 mediumTablet:px-6 rounded mr-5 transition ease-in-out delay-150 hover:bg-[#19a095]">View Courses</ScrollToTopNavLink>
-                            <button onClick={handleShowVideo} className="text-white desktop:text-lg mediumTablet:text-base font-medium desktop:py-4 largeTablet:py-3 mediumTablet:py-2 desktop:px-10 largeTablet:px-8 mediumTablet:px-6 rounded border-2 border-primary hover:border-[#19a095] "><i className="fa-regular fa-circle-play mr-3"></i>Watch Video</button>
+                            <ScrollToTopNavLink to="/courses" className="text-white bg-primary desktop:text-lg smallTablet:text-base font-medium border-2 border-primary desktop:py-4 largeTablet:py-3 smallTablet:py-2 desktop:px-10 largeTablet:px-8 smallTablet:px-6 rounded mr-5 transition ease-in-out delay-150 hover:bg-[#19a095]">View Courses</ScrollToTopNavLink>
+                            <button onClick={handleShowVideo} className="text-white desktop:text-lg smallTablet:text-base font-medium desktop:py-4 largeTablet:py-3 smallTablet:py-2 desktop:px-10 largeTablet:px-8 smallTablet:px-6 rounded border-2 border-primary hover:border-[#19a095] "><i className="fa-regular fa-circle-play mr-3"></i>Watch Video</button>
                         </span>
                     </div>
                     : path === '/courses' ?
                         <div className="flex items-center justify-center flex-col mt-80">
                             <Breadcrumb currPage="Courses" />
-                            <h1 className="desktop:text-6xl mediumTablet:text-5xl text-font_one mt-5 font-semibold">Courses</h1>
+                            <h1 className="desktop:text-6xl mediumTablet:text-5xl smallTablet:text-5xl text-font_one mt-5 font-semibold">Courses</h1>
                         </div> : path === '/about' ?
                             <div className="flex items-center justify-center flex-col mt-80">
                                 <Breadcrumb currPage="About" />
-                                <h1 className="desktop:text-6xl mediumTablet:text-5xl text-font_one mt-5 font-semibold">About Us</h1>
+                                <h1 className="desktop:text-6xl mediumTablet:text-5xl smallTablet:text-5xl text-font_one mt-5 font-semibold">About Us</h1>
                             </div> : path === '/contact' ?
                                 <div className="flex items-center justify-center flex-col mt-80">
                                     <Breadcrumb currPage="Contact" />
-                                    <h1 className="desktop:text-6xl mediumTablet:text-5xl text-font_one mt-5 font-semibold">Contact Us</h1>
+                                    <h1 className="desktop:text-6xl mediumTablet:text-5xl smallTablet:text-5xl text-font_one mt-5 font-semibold">Contact Us</h1>
                                 </div> : path === '/terms-conditions' ?
                                     <div className="flex items-center justify-center flex-col mt-80">
                                         <Breadcrumb currPage="Terms and Conditions" />
-                                        <h1 className="desktop:text-6xl mediumTablet:text-5xl text-font_one mt-5 font-semibold">Terms and Conditions</h1>
+                                        <h1 className="desktop:text-6xl mediumTablet:text-5xl smallTablet:text-5xl text-font_one mt-5 font-semibold">Terms and Conditions</h1>
                                     </div> : path === '/privacy-policy' ?
                                         <div className="flex items-center justify-center flex-col mt-80">
                                             <Breadcrumb currPage="Privacy Policy" />
-                                            <h1 className="desktop:text-6xl mediumTablet:text-5xl text-font_one mt-5 font-semibold">Privacy Policy</h1>
+                                            <h1 className="desktop:text-6xl mediumTablet:text-5xl smallTablet:text-5xl text-font_one mt-5 font-semibold">Privacy Policy</h1>
                                         </div> : <></>
             }
 
