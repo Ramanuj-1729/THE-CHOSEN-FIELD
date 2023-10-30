@@ -23,8 +23,8 @@ const Courses = () => {
                     <Brand />
                 </Header>
             </section>
-            <div className="wideScreen:px-36 desktop:px-24 smallTablet:px-16 desktop:py-40 smallTablet:py-20 flex items-center justify-center flex-col overflow-hidden">
-                <div className="grid largeTablet:grid-cols-2 smallTablet:grid-cols-1 wideScreen:gap-8 desktop:gap-6 smallTablet:gap-5 mb-10">
+            <div className="wideScreen:px-36 desktop:px-24 smallTablet:px-16 largePhone:px-6 desktop:py-40 smallTablet:py-20 largePhone:py-10 flex items-center justify-center flex-col overflow-hidden">
+                <div className="grid largeTablet:grid-cols-2 largePhone:grid-cols-1 wideScreen:gap-8 desktop:gap-6 largePhone:gap-5 mb-10">
                     {
                         coursesData.map((course, index) => (
                             <CourseCard
