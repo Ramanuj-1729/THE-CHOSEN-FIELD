@@ -28,7 +28,7 @@ const App = () => {
 
     <>
       <Router>
-        {includedPaths.includes(window.location.pathname) && <Navbar />}
+        {/* {includedPaths.includes(window.location.pathname) && <Navbar />} */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
