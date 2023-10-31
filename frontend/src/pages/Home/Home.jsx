@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <main>
             <section>
-                <Header bgImage="cta2.2.png">
+                <Header bgImageLarge="header-large-bg.png" bgImageSmall="header-small-bg.png">
                     <Brand />
                 </Header>
             </section>

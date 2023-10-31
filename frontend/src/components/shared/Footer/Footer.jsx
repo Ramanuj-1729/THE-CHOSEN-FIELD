@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="flex mediumTablet:flex-row smallPhone:flex-col justify-between desktop:mx-36 largeTablet:mx-16 smallTablet:mx-5 smallPhone:mx-4 mediumTablet:py-16 smallPhone:py-10">
                 <div className="flex flex-col mr-5">
                     <ScrollToTopNavLink className="w-fit" to="/">
-                        <img className="smallTablet:w-16 smallPhone:w-14" src="images/THE_CHOSEN_FIELD_LOGO.png" alt="logo" />
+                        <img className="smallTablet:w-16 smallPhone:w-14" src="images/THE_CHOSEN_FIELD_LOGO.png" alt="TheChosenField logo" />
                         <span className="smallTablet:text-lg smallPhone:text-base text-white font-semibold">TheChosenField</span>
                     </ScrollToTopNavLink>
                     <p className="smallTablet:text-base smallPhone:text-sm text-font_one font-medium mt-2">Welcome to TheChosenField. <br /> Build Your Future, Choose your Course</p>

@@ -21,6 +21,8 @@ module.exports = {
       fadeWhite: "#F8F8F8",
       gray: "#a6a6a6",
       transparent_blur: "rgba(255, 255, 255, 0.2)",
+      nav_bg_transparent: "rgba(255, 255, 255, 0.1)",
+      nav_bg: "#1EB2A6"
     },
     screens: {
       'smallPhone': '320px', // Phone - portrait

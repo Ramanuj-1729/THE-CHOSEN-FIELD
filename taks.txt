@@ -7,11 +7,6 @@
  5. Introduction Videos
  6. Show You Tube Videos ✅
 
-
-
-5. Responsive
-7. Photos and alt tags
-8. price
-9. educator para
-10. Courses images and links
-11. header video Responsive
+header video Responsive
+other pages header
+Courses Price

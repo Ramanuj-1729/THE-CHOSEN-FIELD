@@ -7,35 +7,33 @@
         "price": "257",
         "off": "150",
         "description": "350+ Tests | Detailed Solutions",
-        "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "image": "https://img.freepik.com/free-photo/side-view-nurses-studying-together_23-2149741262.jpg?w=1060&t=st=1698737699~exp=1698738299~hmac=18a1152d6df4b36114f0b15ef29656c6bcba23fbbe30f0c37e11ba9ea8e19256",
         "instructor": "Sajad Ahmad",
         "instructorImage": "images/admin3.png",
         "featured": "true"
     },
-
     {
         "_id": "2",
+        "courseName": "Class 8 to 12 | School Syllabus",
+        "mode": "Online",
+        "duration": "1 Year",
+        "price": "499",
+        "off": "50",
+        "description": "(CBSE | JKSSB | State Board)",
+        "image": "https://img.freepik.com/free-photo/book-with-green-board-background_1150-3836.jpg?w=1060&t=st=1698738444~exp=1698739044~hmac=628634600c3f9ddc31015b67fd5255520a2706c0590fbf9ccb4fe2e929459ff8",
+        "instructor": "Sajad Ahmad",
+        "instructorImage": "images/admin3.png",
+        "featured": "true"
+    },
+    {
+        "_id": "3",
         "courseName": "Class 8 to 12 | Competitive Exams",
         "mode": "Online",
         "duration": "1 Year",
         "price": "499",
         "off": "50",
         "description": "NEET | SSC | Olaympiad",
-        "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "instructor": "Sajad Ahmad",
-        "instructorImage": "images/admin3.png",
-        "featured": "true"
-    },
-
-    {
-        "_id": "3",
-        "courseName": "Class 8 to 12 | School Tuition",
-        "mode": "Online",
-        "duration": "1 Year",
-        "price": "499",
-        "off": "50",
-        "description": "(CBSE | JKSSB | State Board)",
-        "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "instructor": "Sajad Ahmad",
         "instructorImage": "images/admin3.png",
         "featured": "true"
@@ -48,7 +46,7 @@
         "price": "499",
         "off": "50",
         "description": "CBSE | Olaympiad",
-        "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "image": "https://img.freepik.com/free-photo/woman-with-flask-looking-kids-class_259150-60250.jpg?w=1060&t=st=1698738368~exp=1698738968~hmac=d9055ceca6eb3b84133cea3b1aeb3666f19b4e4eb79a4c40ea9664f6e5b1a7a5",
         "instructor": "Sajad Ahmad",
         "instructorImage": "images/admin3.png",
         "featured": "true"
@@ -61,7 +59,7 @@
         "price": "499",
         "off": "50",
         "description": "CBSE | UG",
-        "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "image": "https://img.freepik.com/free-photo/peron-doing-presentation-her-colleagues_23-2149229032.jpg?w=1060&t=st=1698737482~exp=1698738082~hmac=a9af48c8a0d5c5ad8bdf4ddcb63a001b53a92c70a3b857ce4fd9cc5f8c902e9a",
         "instructor": "Sajad Ahmad",
         "instructorImage": "images/admin3.png",
         "featured": "true"

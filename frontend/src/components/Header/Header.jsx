@@ -5,20 +5,18 @@ import { useLocation } from "react-router-dom";
 import Breadcrumb from "../shared/Breadcrumb/Breadcrumb";
 import ScrollToTopNavLink from "../ScrollToTopNavLink/ScrollToTopNavLink";
 
-const Header = ({ bgImage, children }) => {
+const Header = ({ bgImageLarge, bgImageSmall, children }) => {
     const Location = useLocation();
     const path = Location.pathname;
 
     const headerBackground = {
         width: '100%',
         height: '100vh',
-        backgroundColor: `${path === '/' ? '#9EC4C9' : '#C5C6D0'}`,
-        backgroundPositionX: `${window.screen.width >= 850 ? '85%' : window.screen.width >= 745 ? '130%' : window.screen.width >= 680 ? '150%' : window.screen.width >= 630 ? '200%' : window.screen.width >= 600 ? '270%' : '400%'}`,
-        backgroundPositionY: '100px',
-        backgroundImage: `url(images/${bgImage})`,
-        backgroundSize: 'contain',
+        backgroundImage: `url(images/${window.screen.width >= 850 ? bgImageLarge : bgImageSmall})`,
+        backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundAttachment: 'fixed',
+        backgroundPosition: 'center center',
     }
 
     const [showVideo, setShowVideo] = useState(false);
@@ -31,13 +29,13 @@ const Header = ({ bgImage, children }) => {
             {children}
             {
                 path === '/' ?
-                    <div data-aos="fade-up" className="header-containt absolute mt-52">
+                    <div className="header-containt absolute desktop:left-36 largeTablet:left-20 mediumTablet:left-12 smallTablet:left-8 largePhone:left-6 smallPhone:left-4 translate-y-1/2">
                         <span className="text-sm font-medium text-primary">WELCOME TO <strong>TheChosenField</strong></span>
                         <h1 className="desktop:text-6xl largeTablet:text-5xl smallTablet:text-4xl smallPhone:text-3xl font-semibold text-white largeTablet:my-5 mediumTablet:my-4 smallTablet:my-3 smallPhone:my-2">Build Your <br /> Future, Choose <br /> your Course</h1>
-                        <p className="text-base text-white opacity-[0.8] mb-6">Buy your course now & start your preparation</p>
+                        <p className="text-base text-white mb-6">Buy your course now & start your preparation</p>
                         <span>
                             <ScrollToTopNavLink to="/courses" className="text-white bg-primary desktop:text-lg smallTablet:text-base smallPhone:text-sm font-medium border-2 border-primary desktop:py-4 largeTablet:py-3 smallPhone:py-2 desktop:px-10 largeTablet:px-8 smallTablet:px-6 largePhone:px-5 smallPhone:px-4 rounded mediumTablet:mr-5 smallTablet:mr-4 largePhone:mr-3 smallPhone:mr-2 transition ease-in-out delay-150 hover:bg-[#19a095]">View Courses</ScrollToTopNavLink>
-                            <button onClick={handleShowVideo} className="text-white desktop:text-lg smallTablet:text-base smallPhone:text-sm font-medium desktop:py-4 largeTablet:py-3 smallPhone:py-2 desktop:px-10 largeTablet:px-8 smallTablet:px-6 largePhone:px-5 smallPhone:px-4 rounded border-2 border-primary hover:border-[#19a095] "><i className="fa-regular fa-circle-play mr-3"></i>Watch Video</button>
+                            <button onClick={handleShowVideo} className="text-primary bg-white desktop:text-lg smallTablet:text-base smallPhone:text-sm font-medium desktop:py-4 largeTablet:py-3 smallPhone:py-2 desktop:px-10 largeTablet:px-8 smallTablet:px-6 largePhone:px-5 smallPhone:px-4 rounded border-2 border-white hover:border-[#19a095] "><i className="fa-regular fa-circle-play mr-3"></i>Watch Video</button>
                         </span>
                     </div>
                     : path === '/courses' ?
