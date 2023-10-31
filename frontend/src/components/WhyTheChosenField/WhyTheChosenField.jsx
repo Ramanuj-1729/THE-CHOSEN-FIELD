@@ -3,7 +3,7 @@ import WhyCard from "./WhyCard/WhyCard";
 
 const WhyTheChosenField = () => {
     return (
-        <Section heading="WHY THE CHOSEN FIELD ?" subHeading={`Making learning easier and more convenient for you`} bgColor="#F8F8F8">
+        <Section heading="WHY TheChosenField ?" subHeading={`Making learning easier and more convenient for you`} bgColor="#F8F8F8">
             <div className="grid largeTablet:grid-cols-3 largePhone:grid-cols-2 smallPhone:grid-cols-1 desktop:gap-6 largeTablet:gap-4 smallPhone:gap-3">
                 <WhyCard aos="fade-right" icon="fa-regular fa-newspaper" color="#36688D" heading="Learn Something new" paragraph="Learn new concepts daily, increase your productivity & reach your full potential." />
                 <WhyCard aos="fade-up" icon="fa-solid fa-book" color="#F3CD05" heading="Curated Content" paragraph="Learn in-depth conceptual overviews, reliable and high-quality material." />

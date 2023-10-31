@@ -27,6 +27,7 @@ const Contact = () => {
       })
       .catch((error) => {
         alert(error);
+        setLoading(false);
       });
   }
   return (
@@ -119,7 +120,7 @@ const Contact = () => {
               {loading && (<div className="desktop:w-10 largeTablet:w-8 mediumTablet:w-10 largePhone:w-8 smallPhone:w-6 desktop:h-10 largeTablet:h-8 mediumTablet:h-10 largePhone:h-8 smallPhone:h-6">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><radialGradient id="a12" cx=".66" fx=".66" cy=".3125" fy=".3125" gradientTransform="scale(1.5)"><stop offset="0" stopColor="#1EB2A6"></stop><stop offset=".3" stopColor="#1EB2A6" stopOpacity=".9"></stop><stop offset=".6" stopColor="#1EB2A6" stopOpacity=".6"></stop><stop offset=".8" stopColor="#1EB2A6" stopOpacity=".3"></stop><stop offset="1" stopColor="#1EB2A6" stopOpacity="0"></stop></radialGradient><circle transform-origin="center" fill="none" stroke="url(#a12)" strokeWidth="23" strokeLinecap="round" strokeDasharray="200 1000" strokeDashoffset="0" cx="100" cy="100" r="70"><animateTransform type="rotate" attributeName="transform" calcMode="spline" dur="2" values="360;0" keyTimes="0;1" keySplines="0 0 1 1" repeatCount="indefinite"></animateTransform></circle><circle transform-origin="center" fill="none" opacity=".2" stroke="#1EB2A6" strokeWidth="23" strokeLinecap="round" cx="100" cy="100" r="70"></circle></svg>
               </div>)}
-              {success && (<i data-aos="fade" className="fa-solid fa-circle-check desktop:text-3xl largeTablet:text-2xl mediumTablet:text-3xl largePhone:text-2xl smallPhone:text-xl text-primary"></i>)}
+              {success && (<i className="fa-solid fa-circle-check desktop:text-3xl largeTablet:text-2xl mediumTablet:text-3xl largePhone:text-2xl smallPhone:text-xl text-primary"></i>)}
             </div>
           </form>
           <div>
