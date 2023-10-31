@@ -6,7 +6,7 @@ import { Navigation, Autoplay } from "swiper";
 const Slider = ({ slidesPerView, sliderClass, autoPlay, children, spaceBetween, arrowLeftPosition, arrowRightPosition }) => {
     return (
         <div className='relative'>
-            <div>
+            <div className="flex justify-center items-center h-screen">
                 <Swiper
                     slidesPerView={slidesPerView}
                     spaceBetween={spaceBetween}
@@ -22,8 +22,8 @@ const Slider = ({ slidesPerView, sliderClass, autoPlay, children, spaceBetween, 
                     {children}
                 </Swiper >
             </div>
-            <i id="arrow-left" className="fa-solid fa-chevron-left absolute text-white text-2xl opacity-70 hover:opacity-100 top-1/2 -translate-y-1/2 cursor-pointer" style={{ left: arrowLeftPosition }} ></i>
-            <i id="arrow-right" className="fa-solid fa-chevron-right absolute text-white text-2xl opacity-70 hover:opacity-100 top-1/2 -translate-y-1/2 cursor-pointer" style={{ right: arrowRightPosition }} ></i>
+            <i id="arrow-left" className="fa-solid fa-chevron-left absolute text-white text-2xl opacity-70 hover:opacity-100 largePhone:top-1/2 smallPhone:top-[550px] -translate-y-1/2 cursor-pointer" style={{ left: arrowLeftPosition }} ></i>
+            <i id="arrow-right" className="fa-solid fa-chevron-right absolute text-white text-2xl opacity-70 hover:opacity-100 largePhone:top-1/2 smallPhone:top-[550px] -translate-y-1/2 cursor-pointer" style={{ right: arrowRightPosition }} ></i>
         </div>
     );
 }

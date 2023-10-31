@@ -5,18 +5,18 @@ import { useLocation } from "react-router-dom";
 import Breadcrumb from "../shared/Breadcrumb/Breadcrumb";
 import ScrollToTopNavLink from "../ScrollToTopNavLink/ScrollToTopNavLink";
 
-const Header = ({ bgImageLarge, bgImageSmall, children }) => {
+const Header = ({ children }) => {
     const Location = useLocation();
     const path = Location.pathname;
 
     const headerBackground = {
         width: '100%',
         height: '100vh',
-        backgroundImage: `url(images/${window.screen.width >= 850 ? bgImageLarge : bgImageSmall})`,
+        backgroundImage: `url(images/${path !== '/' ? 'header-other.png' : window.screen.width >= 850 ? 'header-large-bg.png' : 'header-small-bg.png'})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundAttachment: 'fixed',
-        backgroundPosition: 'center center',
+        backgroundPosition: 'center',
     }
 
     const [showVideo, setShowVideo] = useState(false);
@@ -41,19 +41,19 @@ const Header = ({ bgImageLarge, bgImageSmall, children }) => {
                     : path === '/courses' ?
                         <div className="flex items-center justify-center flex-col mt-80">
                             <Breadcrumb currPage="Courses" />
-                            <h1 className="desktop:text-6xl mediumTablet:text-5xl largePhone:text-5xl smallPhone:text-4xl text-font_one mt-5 font-semibold">Courses</h1>
+                            <h1 className="desktop:text-6xl mediumTablet:text-5xl smallPhone:text-5xl text-white mt-5 font-semibold">Courses</h1>
                         </div> : path === '/about' ?
                             <div className="flex items-center justify-center flex-col mt-80">
                                 <Breadcrumb currPage="About" />
-                                <h1 className="desktop:text-6xl mediumTablet:text-5xl largePhone:text-5xl smallPhone:text-4xl text-font_one mt-5 font-semibold">About Us</h1>
+                                <h1 className="desktop:text-6xl mediumTablet:text-5xl smallPhone:text-5xl text-white mt-5 font-semibold">About Us</h1>
                             </div> : path === '/contact' ?
                                 <div className="flex items-center justify-center flex-col mt-80">
                                     <Breadcrumb currPage="Contact" />
-                                    <h1 className="desktop:text-6xl mediumTablet:text-5xl largePhone:text-5xl smallPhone:text-4xl text-font_one mt-5 font-semibold">Contact Us</h1>
+                                    <h1 className="desktop:text-6xl mediumTablet:text-5xl smallPhone:text-5xl text-white mt-5 font-semibold">Contact Us</h1>
                                 </div> : path === '/terms-conditions' ?
                                     <div className="flex items-center justify-center flex-col mt-80">
                                         <Breadcrumb currPage="Terms and Conditions" />
-                                        <h1 className="desktop:text-6xl mediumTablet:text-5xl largePhone:text-5xl smallPhone:text-4xl text-font_one mt-5 font-semibold">Terms and Conditions</h1>
+                                        <h1 className="desktop:text-6xl mediumTablet:text-5xl smallPhone:text-5xl text-white mt-5 font-semibold">Terms and Conditions</h1>
                                     </div> : path === '/privacy-policy' ?
                                         <div className="flex items-center justify-center flex-col mt-80">
                                             <Breadcrumb currPage="Privacy Policy" />
@@ -62,8 +62,8 @@ const Header = ({ bgImageLarge, bgImageSmall, children }) => {
             }
 
             <div style={{ backgroundColor: 'rgba(0, 0, 0, 0.85)' }} className={`${showVideo ? 'block' : 'hidden'} absolute top-0 left-0 right-0 bottom-0 z-20`}>
-                <i onClick={handleShowVideo} className="fa-solid fa-xmark absolute text-3xl opacity-70 text-white top-5 right-5 cursor-pointer hover:opacity-100"></i>
-                <Slider slidesPerView={1} sliderClass="border-2 border-white w-7/12 h-[550px] mt-28" arrowLeftPosition="30px" arrowRightPosition="30px">
+                <i onClick={handleShowVideo} className="z-20 fa-solid fa-xmark absolute text-3xl opacity-70 text-white top-5 right-5 cursor-pointer hover:opacity-100"></i>
+                <Slider slidesPerView={1} sliderClass="border-2 border-white align-middle largePhone:w-4/5 smallPhone:w-[95%] wideScreen:h-[620px] desktop:h-[580px] largeTablet:h-[520px] mediumTablet:h-[480px] smallTablet:h-[400px] largePhone:h-[350px] smallPhone:h-[260px]" arrowLeftPosition="30px" arrowRightPosition="30px">
                     <SwiperSlide>
                         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JQRpBkpd9NQ?si=XHbeU8yPQcnQBpoh" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                     </SwiperSlide>
