@@ -57,7 +57,7 @@ const Header = ({ children }) => {
                                     </div> : path === '/privacy-policy' ?
                                         <div className="flex items-center justify-center flex-col mt-80">
                                             <Breadcrumb currPage="Privacy Policy" />
-                                            <h1 className="desktop:text-6xl mediumTablet:text-5xl largePhone:text-5xl smallPhone:text-4xl text-font_one mt-5 font-semibold">Privacy Policy</h1>
+                                            <h1 className="desktop:text-6xl mediumTablet:text-5xl largePhone:text-5xl smallPhone:text-4xl text-white mt-5 font-semibold">Privacy Policy</h1>
                                         </div> : <></>
             }
 
