@@ -63,5 +63,18 @@
         "instructor": "Sajad Ahmad",
         "instructorImage": "images/admin3.png",
         "featured": "true"
+    },
+    {
+        "_id": "6",
+        "courseName": "Biology | For NEET UG",
+        "mode": "Online",
+        "duration": "6 Months",
+        "price": "499",
+        "off": "50",
+        "description": "NEET | UG",
+        "image": "https://img.freepik.com/free-photo/woman-children-sideways-camera-looking-screen_259150-60350.jpg?w=1060&t=st=1698763819~exp=1698764419~hmac=fbd9a34edf0c1b411ce19d0f4954a0addad4b89700ebb6104239db14cae7732e",
+        "instructor": "Sajad Ahmad",
+        "instructorImage": "images/admin3.png",
+        "featured": "true"
     }
 ]

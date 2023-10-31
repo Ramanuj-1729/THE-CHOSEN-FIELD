@@ -15,8 +15,9 @@ const CourseCard = ({ courseImage, courseName, description, instructorImage, ins
                     </div>
 
                     <div className="my-2 dektop:text-xl largeTablet:text-lg smallTablet:text-xl smallPhone:text-lg font-semibold">
-                        <span className="text-primary mr-5">₹ {price}</span>
-                        <strike className="opacity-50">₹ {parseInt(price) + parseInt(off)}</strike>
+                        {/* <span className="text-primary mr-5">₹ {price}</span>
+                        <strike className="opacity-50">₹ {parseInt(price) + parseInt(off)}</strike> */}
+                        <span className="text-primary">Revealing Soon</span>
                     </div>
 
                     <div className="border-t-2 border-[#bdbdbd] desktop:text-sm largeTablet:text-xs smallTablet:text-sm smallPhone:text-xs flex justify-between items-center pt-2" >

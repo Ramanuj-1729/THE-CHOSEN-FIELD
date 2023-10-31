@@ -4,7 +4,10 @@ import ScrollToTopNavLink from '../../ScrollToTopNavLink/ScrollToTopNavLink';
 const Brand = () => {
     return (
         <div className="flex items-center py-5">
-            <ScrollToTopNavLink to="/" className="text-white largeTablet:text-3xl largePhone:text-2xl smallPhone:text-xl font-semibold transition ease-in delay-150 hover:text-primary" >TheChosenField</ScrollToTopNavLink>
+            <ScrollToTopNavLink className="flex flex-col items-center" to="/">
+                <span className="text-white largeTablet:text-3xl largePhone:text-2xl smallPhone:text-xl font-semibold transition ease-in delay-150">TheChosenField</span>
+                <small className='text-primary largeTablet:text-xl largePhone:text-lg smallPhone:text-base font-medium'>Academy</small>
+            </ScrollToTopNavLink>
 
             <div className="ml-auto flex items-center desktop:space-x-20 largeTablet:space-x-12 mediumTablet:space-x-6 smallTablet:space-x-4">
                 <span className="text-white smallTablet:flex smallPhone:hidden items-center">
