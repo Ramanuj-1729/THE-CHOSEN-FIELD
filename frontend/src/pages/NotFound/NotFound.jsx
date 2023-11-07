@@ -2,7 +2,7 @@ import ScrollToTopNavLink from '../../components/ScrollToTopNavLink/ScrollToTopN
 
 const NotFound = () => {
     return (
-        <div className="min-h-screen flex flex-grow items-center justify-center">
+        <div className="min-h-screen p-5 flex flex-grow items-center justify-center">
             <div className="rounded-lg bg-white p-8 text-center shadow-xl">
                 <h1 className="mb-4 text-4xl font-bold text-font_one">404</h1>
                 <p className="text-font_two">Oops! The page you are looking for could not be found.</p>

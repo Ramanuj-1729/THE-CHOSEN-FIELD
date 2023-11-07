@@ -29,7 +29,6 @@ const Footer = () => {
                         <ScrollToTopNavLink to="/"><li className="text-font_two font-normal mb-2 hover:text-primary">Home</li></ScrollToTopNavLink>
                         <ScrollToTopNavLink to="/about"><li className="text-font_two font-normal mb-2 hover:text-primary">About Us</li></ScrollToTopNavLink>
                         <ScrollToTopNavLink to="/courses"><li className="text-font_two font-normal mb-2 hover:text-primary">Courses</li></ScrollToTopNavLink>
-                        <ScrollToTopNavLink to="/webinar"><li className="text-font_two font-normal mb-2 hover:text-primary">Webinars</li></ScrollToTopNavLink>
                     </ul>
                     <ul>
                         <li className="text-font_one font-semibold mb-3">Quick Links</li>
