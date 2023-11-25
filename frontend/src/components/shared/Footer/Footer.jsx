@@ -19,8 +19,8 @@ const Footer = () => {
                         <NavLink to="http://www.quora.com/profile/Sajjad-Qureshi-13?ch=2&oid=246599219&srid=hJROR&target_type=user" target="_blank"><i className="fa-brands fa-quora smallTablet:p-3 smallPhone:p-2 rounded-full bg-transparent_blur transition ease-in delay-150 hover:text-white hover:bg-primary"></i></NavLink>
                     </span>
                     <div className="absolute largeTablet:bottom-3 mediumTablet:bottom-20 mediumTablet:top-auto smallPhone:top-10 desktop:right-40 largeTablet:right-24 mediumTablet:right-16 smallTablet:right-10 largePhone:right-5 smallPhone:right-3 flex items-center flex-col">
-                        <p data-aos="fade" className="text-font_one font-semibold smallTablet:text-base smallPhone:text-sm">Get the TheChosenField App</p>
-                        <NavLink data-aos="flip-left" to="https://play.google.com/store/apps/details?id=co.diaz.wjgqz" target="_blank"><img className="smallTablet:w-40 largePhone:w-32 smallPhone:w-28" src="images/google-play-badge.png" alt="google-play-badge" /></NavLink>
+                        <p className="text-font_one font-semibold smallTablet:text-base smallPhone:text-sm">Get the TheChosenField App</p>
+                        <NavLink to="https://play.google.com/store/apps/details?id=co.diaz.wjgqz" target="_blank"><img className="smallTablet:w-40 largePhone:w-32 smallPhone:w-28" src="images/google-play-badge.png" alt="google-play-badge" /></NavLink>
                     </div>
                 </div>
                 <div className="flex w-full largePhone:flex-nowrap smallPhone:flex-wrap smallTablet:text-base smallPhone:text-sm largePhone:justify-between">
