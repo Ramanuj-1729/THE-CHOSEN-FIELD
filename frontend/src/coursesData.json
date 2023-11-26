@@ -76,5 +76,44 @@
         "instructor": "Sajad Ahmad",
         "instructorImage": "images/admin3.png",
         "featured": "true"
+    },
+    {
+        "_id": "7",
+        "courseName": "A Level Biology",
+        "mode": "Online",
+        "duration": "12 Months",
+        "price": "499",
+        "off": "50",
+        "description": "Basic Biology | A Level",
+        "image": "/images/courses/course_seven.jpg",
+        "instructor": "Sajad Ahmad",
+        "instructorImage": "images/admin3.png",
+        "featured": "true"
+    },
+    {
+        "_id": "8",
+        "courseName": "GCSE Biology",
+        "mode": "Online",
+        "duration": "12 Months",
+        "price": "499",
+        "off": "50",
+        "description": "GCSE",
+        "image": "/images/courses/course_eight.jpg",
+        "instructor": "Sajad Ahmad",
+        "instructorImage": "images/admin3.png",
+        "featured": "true"
+    },
+    {
+        "_id": "9",
+        "courseName": "AP Environmental Science",
+        "mode": "Online",
+        "duration": "12 Months",
+        "price": "499",
+        "off": "50",
+        "description": "AP Students",
+        "image": "/images/courses/course_nine.jpg",
+        "instructor": "Sajad Ahmad",
+        "instructorImage": "images/admin3.png",
+        "featured": "true"
     }
 ]

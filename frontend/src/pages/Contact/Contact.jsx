@@ -69,7 +69,7 @@ const Contact = () => {
             <div>
               <span className="desktop:text-base largeTablet:text-sm largePhone:text-sm smallPhone:text-sm text-font_one font-medium">EMAIL</span>
               <p className="text-font_two desktop:text-sm largeTablet:text-xs largePhone:text-xs smallPhone:text-sm leading-6 mt-1">
-                info@thechosenfield.com
+                sajad@thechosenfield.org
               </p>
             </div>
             <div className="largeTablet:basis-5/12 mediumTablet:basis-1/2 largePhone:basis-1/2 smallPhone:basis-1/2">
